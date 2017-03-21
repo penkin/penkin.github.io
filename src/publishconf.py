@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from src.pelicanconf import *
 
-SITEURL = 'http://www.penkin.net'
+SITEURL = 'http://penkin.net'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
