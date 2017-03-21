@@ -7,11 +7,10 @@ SITENAME = 'Penkin'
 SITESUBTITLE = 'Husband. Father. Software Developer.'
 SITEURL = ''
 
-MINT = True
-
 THEME = 'pelican-chunk'
 
 PATH = 'content'
+OUTPUT_PATH = '../'
 
 TIMEZONE = 'Africa/Johannesburg'
 
