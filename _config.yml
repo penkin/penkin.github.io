@@ -27,7 +27,7 @@ social:
   email: 
   linkedin: penkin
 
-mixpanel_analytics: "d5d365dff5534ba6835dbd0d4933ea53"
+clicky_analytics: 101164136
 
 disqus:
     shortname: penkin
