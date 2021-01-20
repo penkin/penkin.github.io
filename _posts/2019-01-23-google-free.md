@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Google "Free"
-date: 2019-01-23
 image: google-free.png
 categories: ["Privacy", "Social Media"]
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ESH Canberra 2019
-date: 2019-04-16
 image: esh_logo_canberra2019.png
 categories: ["Evidence Synthesis Hackathon", "Software Development"]
 ---

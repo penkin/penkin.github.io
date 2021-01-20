@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Facebook "Free"
-date: 2019-02-28
 image: fb-free-badge.png
 categories: ["Privacy", "Social Media"]
 ---

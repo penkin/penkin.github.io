@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Deleting “bin” & “obj” folders in a .NET solution.
-date: 2020-04-21
 image: code.jpg
 categories: ["Software Development"]
 ---

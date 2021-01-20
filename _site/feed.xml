@@ -5,8 +5,8 @@
     <description>Christian. Husband. Father. South African. Nerd.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jan 2021 14:35:15 +0200</pubDate>
-    <lastBuildDate>Wed, 20 Jan 2021 14:35:15 +0200</lastBuildDate>
+    <pubDate>Wed, 20 Jan 2021 15:13:02 +0200</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2021 15:13:02 +0200</lastBuildDate>
     <generator>Jekyll v4.2.0</generator><item>
         <title>Being Intentional</title>
         <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;ow has 2021 started at an incredible pace for me. Getting back into the projects I'm working on as [DSF](https://www.digitalsolutionfoundry.co.za/) and picking up with clients where we left off in 2020.&lt;/p&gt;
@@ -22,9 +22,9 @@
 &lt;p&gt;What I’ve liked so far about this little routine I’m developing is that I can easily see this list when people ask me &lt;strong&gt;“if I have time for…“&lt;/strong&gt; something. I can see what is planned, how long these tasks may take and if I can slot anything more in. I can also plan ahead and put a task for the future and know that that time is booked. This process has saved my sanity quite a bit I have to admit. I’m sure there will be tweaks along the way, but overall, it’s working for me for now.&lt;/p&gt;
 
 </description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;ow has 2021 started at an incredible pace for me. Getting back into the projects I'm working on as [DSF](https://www.digitalsolutionfoundry.co.za/) and picking up with clients where we left off in 2020.&lt;/p&gt;
-</description><pubDate>Tue, 21 Apr 2020 00:00:00 +0200</pubDate>
+</description><pubDate>Wed, 20 Jan 2021 00:00:00 +0200</pubDate>
         <link>/blog/intentional/</link>
-        <guid isPermaLink="true">/blog/intentional/</guid><category>Social Media</category><category>Self Development</category></item><item>
+        <guid isPermaLink="true">/blog/intentional/</guid><category>Self Development</category></item><item>
         <title>Deleting “bin” &amp; “obj” folders in a .NET solution.</title>
         <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;R&lt;/span&gt;ecently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.&lt;/p&gt;
 

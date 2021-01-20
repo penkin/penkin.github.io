@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Being Intentional
-date: 2020-04-21
 image: intention.jpg
-categories: ["Social Media", "Self Development"]
+categories: ["Self Development"]
 ---
 
 <p class="intro"><span class="dropcap">W</span>ow has 2021 started at an incredible pace for me. Getting back into the projects I'm working on as [DSF](https://www.digitalsolutionfoundry.co.za/) and picking up with clients where we left off in 2020.</p>

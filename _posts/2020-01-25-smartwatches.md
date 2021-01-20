@@ -1,11 +1,9 @@
 ---
 layout: post
 title: My Problem With Smartwatches
-date: 2020-01-25
 image: smartwatches.jpg
 categories: ["Apple", "Gadgets", "Smartwatch"]
 ---
-
 
 <p class="intro"><span class="dropcap">I</span> got an Apple Watch to monitor my health; notifications got in the way.</p>
 
