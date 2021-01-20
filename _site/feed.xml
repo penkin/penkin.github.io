@@ -5,8 +5,8 @@
     <description>Christian. Husband. Father. South African. Nerd.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jan 2021 12:50:27 +0200</pubDate>
-    <lastBuildDate>Wed, 20 Jan 2021 12:50:27 +0200</lastBuildDate>
+    <pubDate>Wed, 20 Jan 2021 12:53:06 +0200</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2021 12:53:06 +0200</lastBuildDate>
     <generator>Jekyll v4.2.0</generator><item>
         <title>Deleting “bin” &amp; “obj” folders in a .NET solution.</title>
         <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;R&lt;/span&gt;ecently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.&lt;/p&gt;
