@@ -1,13 +1,12 @@
 ---
-title: Google "Free"
 layout: post
+title: Google "Free"
 date: 2019-01-23
-description: I have long been an advocate of Google, all their services "just work". They sync up wonderfully, they're available everywhere and best of all, it's free!.
 image: google-free.png
 categories: ["Privacy", "Social Media"]
 ---
 
-I have long been an advocate of Google, all their services _"just work"_. They sync up wonderfully, they're available everywhere and best of all, **it's free!**
+<p class="intro"><span class="dropcap">I</span> have long been an advocate of Google, all their services _"just work"_. They sync up wonderfully, they're available everywhere and best of all, **it's free!**</p>
 
 The question, however, is, _"Is using Google really free?"_ No, you are either buying a product or you are the product being sold. Google is not making millions on thin air, on free email clients, on free calendars, on free document services. No, they make money quite obviously on your data. Some people don't mind the trade-off, some people do. Recently I became the part of the people that do.
 
@@ -17,7 +16,9 @@ One of my turning points was when I got PDF documents in my email and suddenly a
 
 [Bryan Lunduke](https://www.youtube.com/channel/UCkK9UDm_ZNrq_rIXCz3xCGA) had a great show on this not so long ago as well [where he speaks about which mobile OS spies more](https://www.youtube.com/watch?v=8n6ubzCzZ5I). If memory serves me well; which it almost never does; Android calls home every four minutes and iOS calls home once a day with location information. These were phones that were not being used, just sitting on a desk.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8n6ubzCzZ5I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8n6ubzCzZ5I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## ProtonMail
 

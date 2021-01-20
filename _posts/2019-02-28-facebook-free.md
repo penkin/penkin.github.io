@@ -1,19 +1,20 @@
 ---
-title: Facebook "Free"
 layout: post
-date: 2019-01-23
-description: Not so long ago I wrote about leaving Google, they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.
+title: Facebook "Free"
+date: 2019-02-28
 image: fb-free-badge.png
 categories: ["Privacy", "Social Media"]
 ---
 
-Not so long ago I wrote about [leaving Google](/privacy/social%20media/2019/01/23/google-free.html), they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.
+<p class="intro"><span class="dropcap">N</span>ot so long ago I wrote about [leaving Google](/privacy/social%20media/2019/01/23/google-free.html), they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.</p>
 
 Facebook is no different. Also primarily an ad selling company they need to employ pretty much the same tactics as Google. Not only is Facebook in the business of getting as much data about you as possible, but they have business and political agendas that they want to push on you.
 
 Have a look at the recent video [Project Veritas](https://www.projectveritas.com/) released below;
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pYSmFI9GAAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pYSmFI9GAAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 I’m still blown away by the number of [stories](https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636?ns=prod/accounts-wsj) that have [come out](https://techcrunch.com/2019/02/21/facebook-removes-onavo/) about [Facebook](https://medium.com/@alecmuffett/a-billion-grains-of-rice-91202220e10e) in the last little while with little to no impact on their business. As a society, we are so hooked on Facebook crack that we just cannot call it quits.
 

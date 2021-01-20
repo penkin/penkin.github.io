@@ -1,30 +1,33 @@
-title: "Don't Jump"
-
-about: "Inside the head of Christopher Penkin. My thoughts and opinions are my own."
-markdown: kramdown
+title: Don't Jump
+description: Christian. Husband. Father. South African. Nerd.
 url: ""
 baseurl: ""
-disqus_short_name: disqus-demo-page
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+header: large
 
-plugins: 
-  - jekyll-paginate
-  - jemoji
-  
-paginate_path: "/page:num/"
+# Header Option
+# header: large
 
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
 paginate: 5
 
-main_toc:
+navigation:
   - title: Home
-    url: ""
+    url: /index.html
   - title: About
-    url: "about"
-  - title: Author
-    url: "author"
+    url: /about
 
-defaults:
-  -
-    scope:
-      path: "_posts"
-    values:
-      layout: "post"
+social:
+  github: penkin
+  twitter: penkin
+  facebook: 
+  email: 
+  linkedin: penkin
+
+google_analytics: ""
+
+disqus:
+    shortname: penkin

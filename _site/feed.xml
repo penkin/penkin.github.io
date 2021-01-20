@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Don't Jump</title>
+    <description>Christian. Husband. Father. South African. Nerd.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 20 Jan 2021 12:43:52 +0200</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2021 12:43:52 +0200</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator><item>
+        <title>Deleting “bin” &amp; “obj” folders in a .NET solution.</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;R&lt;/span&gt;ecently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/code1.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Fig1. - Didn't find the associated module for the breakpoint&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;bash-solution&quot;&gt;Bash Solution&lt;/h2&gt;
+
+&lt;p&gt;Since the project I’m working on is pretty big, going through all the directories manually is super tedious. I work on OSX so I needed something that works in bash and here is what I came up with.&lt;/p&gt;
+
+&lt;p&gt;I created a file in the solution’s root directory called DeleteBinObjFolders.sh. I wrote the following in the file;&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Deleting all bin and obj folders...&quot;&lt;/span&gt;
+find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-iname&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;bin&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-iname&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;obj&quot;&lt;/span&gt; | xargs &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Your bin and obj folders deleted!&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;All that is left is to make the file executable with chmod +x DeleteBinObjFolders.sh. Now we are all good to run the file by entering ./DeleteBinObjFolders.sh in your terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;BAM!&lt;/strong&gt; All your bin and obj files are a thing of the past.&lt;/p&gt;
+
+&lt;h2 id=&quot;bat-solution&quot;&gt;BAT Solution&lt;/h2&gt;
+
+&lt;p&gt;I found the following solution on &lt;a href=&quot;https://medium.com/volosoft/deleting-all-bin-obj-folders-in-a-solution-93e401372e69&quot;&gt;Alper Ebiçoğlu’s post&lt;/a&gt; about the same issue. Basically do exactly the same as above but instead of using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.sh&lt;/code&gt; extension, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bat&lt;/code&gt;.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;@echo &lt;span class=&quot;na&quot;&gt;off&lt;/span&gt;
+@echo &lt;span class=&quot;kd&quot;&gt;Deleting&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;BIN&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;OBJ&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;folders&lt;/span&gt;…for &lt;span class=&quot;na&quot;&gt;/d /r &lt;/span&gt;. &lt;span class=&quot;vm&quot;&gt;%%d&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; @if &lt;span class=&quot;ow&quot;&gt;exist&lt;/span&gt; “&lt;span class=&quot;vm&quot;&gt;%%d&lt;/span&gt;” &lt;span class=&quot;nb&quot;&gt;rd&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;/s/q &lt;/span&gt;“&lt;span class=&quot;vm&quot;&gt;%%d&lt;/span&gt;”@echo &lt;span class=&quot;kd&quot;&gt;BIN&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;OBJ&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;folders&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;successfully&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;deleted&lt;/span&gt; :&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;Close&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;window&lt;/span&gt;.pause &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;nul&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Double click the bat file and &lt;strong&gt;BAM! Victory!&lt;/strong&gt;&lt;/p&gt;
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;R&lt;/span&gt;ecently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.&lt;/p&gt;
+</description><pubDate>Tue, 21 Apr 2020 00:00:00 +0200</pubDate>
+        <link>/blog/bin-obj-folders/</link>
+        <guid isPermaLink="true">/blog/bin-obj-folders/</guid><category>Software Development</category></item><item>
+        <title>Step Back, Take a Breath, Try Later</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;T&lt;/span&gt;his happens to me way more than I’d like to admit and I’m hoping that by writing it down here I will learn from my mistakes. Maybe you’re making this mistake and could learn as well, please don’t tell me I’m the only one doing this!?&lt;/p&gt;
+
+&lt;h2 id=&quot;so-it-goes-something-like-this&quot;&gt;So it goes something like this;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Start a task.&lt;/li&gt;
+  &lt;li&gt;Struggle for a while.&lt;/li&gt;
+  &lt;li&gt;Get tired.&lt;/li&gt;
+  &lt;li&gt;Don’t stop, just push through, you HAVE TO finish this tonight!&lt;/li&gt;
+  &lt;li&gt;Get more tired.&lt;/li&gt;
+  &lt;li&gt;Struggle more.&lt;/li&gt;
+  &lt;li&gt;Eventually, you give up, you hear the birds chirping outside.&lt;/li&gt;
+  &lt;li&gt;Go to bed, get what little sleep you can still get.&lt;/li&gt;
+  &lt;li&gt;Wake up and have another go at the problem.&lt;/li&gt;
+  &lt;li&gt;5 minutes later, problem solved.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wheres-the-problem&quot;&gt;Where’s the problem?&lt;/h2&gt;
+
+&lt;p&gt;It occurs to me that I was just too tired to think up and implement the solution. Soon as I get the sleep my brain needs to function, the solution seems to come quickly. This has happened to me more than I’d be comfortable admitting. Instead of losing all those hours, time to read, or do a hobby or get that needed sleep was wasted staring at a monitor, stuck in a “solution” rut. All I needed to do was step back, take a breath, try again later. If that later happens to be the next day then it happens the next day.&lt;/p&gt;
+
+&lt;p&gt;I have this bad habit of not being able to leave a task that I’m struggling with. I have to win, I have to beat it. There is no surrender, well none until I just cannot keep my eyes open anymore.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-what-now&quot;&gt;So what now?&lt;/h2&gt;
+
+&lt;p&gt;Well now… I take a step back, breathe and come back later. There is a lot on my plate as well, there are always smaller simple tasks I can do to distract me from the difficult exciting one holding me back. Something to clear the mind before I take another stab at it. If it’s late, that task is to &lt;a href=&quot;https://www.ideasforleaders.com/ideas/the-importance-of-sleep-for-work&quot;&gt;sleep&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is some more interesting reading on &lt;a href=&quot;https://link.springer.com/article/10.3758%2Fs13421-012-0256-7&quot;&gt;sleep and problem-solving&lt;/a&gt;, especially if they’re difficult problems.&lt;/p&gt;
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;T&lt;/span&gt;his happens to me way more than I’d like to admit and I’m hoping that by writing it down here I will learn from my mistakes. Maybe you’re making this mistake and could learn as well, please don’t tell me I’m the only one doing this!?&lt;/p&gt;
+</description><pubDate>Sat, 01 Feb 2020 00:00:00 +0200</pubDate>
+        <link>/blog/step-back/</link>
+        <guid isPermaLink="true">/blog/step-back/</guid><category>Software Development</category></item><item>
+        <title>My Problem With Smartwatches</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; got an Apple Watch to monitor my health; notifications got in the way.&lt;/p&gt;
+
+&lt;p&gt;I’ve had an &lt;a href=&quot;https://www.apple.com/watch/&quot;&gt;Apple Watch&lt;/a&gt; for a little while now. I got it mostly to help me monitor my health and send some of that information to my medical aid as part of their rewards program. The more I move, the more points I get, the more benefits I enjoy.&lt;/p&gt;
+
+&lt;p&gt;Seemed like a great idea, I love gadgets and a smartwatch that lets me auto-login to my MacBook, tell me how well I’m sleeping, how my heart is doing, how many steps I take; you get the point; seems like a great idea. Let’s not forget all those juicy points from my medical aid.&lt;/p&gt;
+
+&lt;p&gt;It had the reverse effect, I started getting frustrated with all the buzzing on my wrist. Did something happen on &lt;a href=&quot;https://twitter.com/penkin&quot;&gt;Twitter&lt;/a&gt;? Buzz! Did someone send me an email? Buzz! Some text message spam? Buzz! Incessant interruptions that I could not ignore. I’d be in meetings and the cry for attention would buzz on my arm and I’d naturally look, others in the meeting would ask if I needed to be somewhere as though I was checking the time. How much longer is this boring meeting going to go on for sort of thing!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-solution&quot;&gt;The Solution&lt;/h2&gt;
+
+&lt;p&gt;So I did not just stop using my watch, instead, I decided to just cut out the noise. On the Watch app on the iPhone, you can simply &lt;a href=&quot;https://support.apple.com/en-gb/HT204791&quot;&gt;turn notifications off&lt;/a&gt;, either completely or select the apps you want to allow to grab your attention.&lt;/p&gt;
+
+&lt;p&gt;Initially, it felt extremely strange, instead of looking at my watch for why I was being buzzed, I was not looking at it for why it was not buzzing anymore. Is my watch dead? No, just less needy for attention. It’s been a week now and it’s amazing, I can sit through a meeting without distraction, continue to code without being torn away.&lt;/p&gt;
+
+&lt;p&gt;So as much as I wanted to use the device to help improve my health, the notifications got in the way. I found I ignored the “important” ones in all the noise of the rest.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I highly recommend carefully choosing what you allow to take your time and attention.&lt;/strong&gt;&lt;/p&gt;
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; got an Apple Watch to monitor my health; notifications got in the way.&lt;/p&gt;
+</description><pubDate>Sat, 25 Jan 2020 00:00:00 +0200</pubDate>
+        <link>/blog/smartwatches/</link>
+        <guid isPermaLink="true">/blog/smartwatches/</guid><category>Apple</category><category>Gadgets</category><category>Smartwatch</category></item><item>
+        <title>ESH Canberra 2019</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;T&lt;/span&gt;he Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Evidence synthesis is the process of converting scientific outputs – such as articles, reports and data – into reliable and digestible evidence that can inform management and policy.
+&lt;a href=&quot;https://evidencesynthesishackathon.com&quot;&gt;https://evidencesynthesishackathon.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;how-does-the-esh-work&quot;&gt;How does the ESH work?&lt;/h2&gt;
+
+&lt;p&gt;A number of people are invited from various backgrounds within evidence synthesis, either from a purely academic side, software engineer side or a little of both. There is a list of potential “problems” to solve either by writing a paper on the topic or creating software to ease the pain of the current process. As a software developer with little to no academic background, I end up trying to write software to make a specific process a little less painful.&lt;/p&gt;
+
+&lt;p&gt;I find this amazingly fulfilling and interesting. 1. I need to understand the problem sphere to be able to make anything useful to those that need the solution and 2. any help given is normally hugely appreciated.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-worked-on&quot;&gt;What I worked on.&lt;/h2&gt;
+
+&lt;p&gt;So the problem I found the most intriguing was the problem of grey literature research. In evidence synthesis it is relatively easy to find published literature on a given topic, and to record what the search string was used in which database, how many records were found, how many were used or not used and why.&lt;/p&gt;
+
+&lt;p&gt;All that is solved with expensive published databases. What if you want the same sort of transparency and repeatability for grey literature searches which can quite literally be done on any website on the internet&lt;/p&gt;
+
+&lt;h2 id=&quot;our-solution&quot;&gt;Our Solution&lt;/h2&gt;
+
+&lt;p&gt;There are two parts to our solution, 1. a Google Chrome extension and 2. a web application to manage the results of the Google Chrome extension.&lt;/p&gt;
+
+&lt;h3 id=&quot;google-chrome-extension&quot;&gt;Google Chrome Extension&lt;/h3&gt;
+
+&lt;p&gt;What I started working on with partner on the project, Mandlenkosi, is a &lt;a href=&quot;https://developer.chrome.com/extensions&quot;&gt;Google Chrome extension&lt;/a&gt; that you train on the search results of the current website that you are on. It will then record the results – as &lt;a href=&quot;https://en.wikipedia.org/wiki/JSON&quot;&gt;JSON&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Comma-separated_values&quot;&gt;CSV&lt;/a&gt; and potentially &lt;a href=&quot;https://en.wikipedia.org/wiki/RIS_(file_format)&quot;&gt;RIS&lt;/a&gt; – as well as the URL of the site and the search string used.&lt;/p&gt;
+
+&lt;p&gt;The reason we decided on a Chrome extension for this part of the problem is to keep the solution as generic as possible without the need to keep a library of web-scraping scripts for all possible – or most used – websites that can easily go out of date if those sites structures are ever changed. With the extension you can easily start your search, click on the extension and tell it where the 1st result item is, tag all the relevant data in that result and automatically scrape the rest of the results and pages. Even if the markup changes for the site the next time you go to it will not matter as the extension is shown each time what elements on the page you’re interested in.&lt;/p&gt;
+
+&lt;h3 id=&quot;web-application&quot;&gt;Web Application&lt;/h3&gt;
+
+&lt;p&gt;The 2nd part of the solution is to create a web application that can take the results of the Chrome extension and retrieve all the metadata around what you’ve extracted like link details, attached PDFs etc.&lt;/p&gt;
+
+&lt;p&gt;The way I imagine this all working is that you will also be able to select results you want to use, and discard those that you do not want to use with reasons for your decision.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-result&quot;&gt;The Result&lt;/h2&gt;
+
+&lt;p&gt;There is only so much a jet-lagged, sleep-deprived person can do in three days. What we do have so far is a good proof of concept. Our code for the Google Chrome extension is available on &lt;a href=&quot;https://github.com/ESHackathon/grey-literature-recorder&quot;&gt;GitHub&lt;/a&gt; if you want to contribute in any way. It’s still very raw and we need a lot of polish around the readme, contribution and licensing docs.&lt;/p&gt;
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;T&lt;/span&gt;he Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.&lt;/p&gt;
+</description><pubDate>Tue, 16 Apr 2019 00:00:00 +0200</pubDate>
+        <link>/blog/esh-canberra/</link>
+        <guid isPermaLink="true">/blog/esh-canberra/</guid><category>Evidence Synthesis Hackathon</category><category>Software Development</category></item><item>
+        <title>Facebook &quot;Free&quot;</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;N&lt;/span&gt;ot so long ago I wrote about [leaving Google](/privacy/social%20media/2019/01/23/google-free.html), they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.&lt;/p&gt;
+
+&lt;p&gt;Facebook is no different. Also primarily an ad selling company they need to employ pretty much the same tactics as Google. Not only is Facebook in the business of getting as much data about you as possible, but they have business and political agendas that they want to push on you.&lt;/p&gt;
+
+&lt;p&gt;Have a look at the recent video &lt;a href=&quot;https://www.projectveritas.com/&quot;&gt;Project Veritas&lt;/a&gt; released below;&lt;/p&gt;
+
+&lt;div class=&quot;youtube-video-container&quot;&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/pYSmFI9GAAs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I’m still blown away by the number of &lt;a href=&quot;https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636?ns=prod/accounts-wsj&quot;&gt;stories&lt;/a&gt; that have &lt;a href=&quot;https://techcrunch.com/2019/02/21/facebook-removes-onavo/&quot;&gt;come out&lt;/a&gt; about &lt;a href=&quot;https://medium.com/@alecmuffett/a-billion-grains-of-rice-91202220e10e&quot;&gt;Facebook&lt;/a&gt; in the last little while with little to no impact on their business. As a society, we are so hooked on Facebook crack that we just cannot call it quits.&lt;/p&gt;
+
+&lt;p&gt;I think the internet needs is less social media that is BIG and more personal ones. A lot of people want Facebook to stay connected to family and friends that they cannot just quickly pop in to visit. I think being able to set up your own little social network for exactly that makes more sense that signing over all your data to an ad selling company.&lt;/p&gt;
+
+&lt;p&gt;I remember seeing an app not so long ago trying to tackle that very problem, &lt;a href=&quot;https://joindiaspora.com/&quot;&gt;JoinDiaspora*&lt;/a&gt;. So you can join an existing pod that is hosted by someone or host your very own and have the people you want to be involved in your pod on it. So you could make a pod for your family or friends and share confidently knowing that your data is not feeding an ad machine or being misused to guide voters in an election.&lt;/p&gt;
+
+&lt;p&gt;I have not used Diaspora yet but I’m not sure I have a need for one. I have been off Facebook for a while now with no regrets. You quickly get over that FOMO that you’re missing out. I also have decided not to use Instagram or WhatsApp specifically because they are owned by Facebook. I don’t know if I’m strange but I really have very little need for social media, it mostly seems fake to me.&lt;/p&gt;
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;N&lt;/span&gt;ot so long ago I wrote about [leaving Google](/privacy/social%20media/2019/01/23/google-free.html), they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.&lt;/p&gt;
+</description><pubDate>Thu, 28 Feb 2019 00:00:00 +0200</pubDate>
+        <link>/blog/facebook-free/</link>
+        <guid isPermaLink="true">/blog/facebook-free/</guid><category>Privacy</category><category>Social Media</category></item><item>
+        <title>Google &quot;Free&quot;</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; have long been an advocate of Google, all their services _&quot;just work&quot;_. They sync up wonderfully, they're available everywhere and best of all, **it's free!**&lt;/p&gt;
+
+&lt;p&gt;The question, however, is, &lt;em&gt;“Is using Google really free?”&lt;/em&gt; No, you are either buying a product or you are the product being sold. Google is not making millions on thin air, on free email clients, on free calendars, on free document services. No, they make money quite obviously on your data. Some people don’t mind the trade-off, some people do. Recently I became the part of the people that do.&lt;/p&gt;
+
+&lt;p&gt;It’s not really about needing to hide or being scared of what they find which is often what I hear when talking to people. Often the response is, &lt;em&gt;“…yeah I don’t care because I have anything to hide…”&lt;/em&gt; as though I do? No, I just don’t want an advertising company having access to everything I do, say, write etc.&lt;/p&gt;
+
+&lt;p&gt;One of my turning points was when I got PDF documents in my email and suddenly any dates in there were in my calendar automagically or I’d get reminders to pay bills from invoices I received. Some people love that, they love Google going through all their stuff unencumbered; &lt;strong&gt;I don’t&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCkK9UDm_ZNrq_rIXCz3xCGA&quot;&gt;Bryan Lunduke&lt;/a&gt; had a great show on this not so long ago as well &lt;a href=&quot;https://www.youtube.com/watch?v=8n6ubzCzZ5I&quot;&gt;where he speaks about which mobile OS spies more&lt;/a&gt;. If memory serves me well; which it almost never does; Android calls home every four minutes and iOS calls home once a day with location information. These were phones that were not being used, just sitting on a desk.&lt;/p&gt;
+
+&lt;div class=&quot;youtube-video-container&quot;&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/8n6ubzCzZ5I&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;protonmail&quot;&gt;ProtonMail&lt;/h2&gt;
+
+&lt;p&gt;So what am I doing now? Well, I’ve become a lot more comfortable paying for the services I need. For my email, I’ve moved to a service called &lt;a href=&quot;https://protonmail.com/&quot;&gt;ProtonMail&lt;/a&gt;. They offer an email service that is &lt;a href=&quot;https://protonmail.com/security-details&quot;&gt;encrypted end-to-end&lt;/a&gt;. I exported all my email out of Gmail and imported them back into ProtonMail without a hitch.&lt;/p&gt;
+
+&lt;p&gt;ProtonMail also offers the convenience of mobile apps and if you prefer traditional desktop clients; as opposed to their web client; they have a &lt;a href=&quot;https://protonmail.com/bridge/&quot;&gt;bridge&lt;/a&gt; that you can use to set up your desktop clients. I have been ProtonMail mail now for almost two months and am still a happy camper.&lt;/p&gt;
+
+&lt;h2 id=&quot;mobile&quot;&gt;Mobile&lt;/h2&gt;
+
+&lt;p&gt;After listening to Bryan Lunduke’s bit on “mobile spying” I also got rid of all Google’s apps on my phone. Obviously not using their services I don’t need their apps right? I mean even Google Maps, Waze etc.&lt;/p&gt;
+
+&lt;p&gt;I have to admit however it may be an easier job getting off Google on an iPhone than it is on any Android phone. Apple seems to be more agnostic about what you use whereas Android is a better experience when you’re full-tilt into Google without any cares.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I have ended up going what I guess a lot of people consider extreme. I have no Google apps on my phone, I don’t use any of their services. I use &lt;a href=&quot;https://duckduckgo.com/spread&quot;&gt;Duck Duck Go&lt;/a&gt; for search. No more Chrome as my internet browser, I use &lt;a href=&quot;https://brave.com/&quot;&gt;Brave&lt;/a&gt; instead.&lt;/p&gt;
+
+&lt;p&gt;I have kept my Google account for now just to ensure that everyone that needs to email me has my new email address. Overall, I don’t miss Google at all.&lt;/p&gt;
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; have long been an advocate of Google, all their services _&quot;just work&quot;_. They sync up wonderfully, they're available everywhere and best of all, **it's free!**&lt;/p&gt;
+</description><pubDate>Wed, 23 Jan 2019 00:00:00 +0200</pubDate>
+        <link>/blog/google-free/</link>
+        <guid isPermaLink="true">/blog/google-free/</guid><category>Privacy</category><category>Social Media</category></item></channel>
+</rss>

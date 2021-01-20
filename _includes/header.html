@@ -1,25 +1,14 @@
- <header role="banner">
-    <nav class="navbar navbar-expand-md navbar-light bg-white absolute-top">
-      <div class="container">
-
-        <button class="navbar-toggler order-2 order-md-1" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse order-3 order-md-2" id="navbar">
-          
-		  <ul class="navbar-nav mr-auto">
-		  
-			{% for link in site.main_toc %}
-			    <li class="nav-item">
-			      <a class="nav-link" href="{{ site.baseurl }}/{{ link.url }}">{{ link.title }}</a>
-			    </li>
-			{% endfor %}			
-          	</ul>
-		  
-        </div>
-
-        <a class="navbar-brand mx-auto order-1 order-md-3" href="{{site.baseurl}}">{{ site.title }}</a>
-      </div>
-    </nav>
-  </header>
+ <div class="header {% if site.header == "large" %}header--large{% endif %}">
+     <div class="container">
+         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList">
+                 {%- for link in site.navigation -%}{%- assign current = nil -%}{%- if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' -%}{%- assign current = 'current' -%}{%- endif -%}
+                 <li class="element {%- if forloop.first -%}first{%- endif -%} {{ current }} {%- if forloop.last -%}last{%- endif -%}">
+                     <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                 </li> 
+                 {%- endfor -%}
+             </ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->

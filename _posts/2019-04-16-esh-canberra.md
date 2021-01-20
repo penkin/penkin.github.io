@@ -1,13 +1,12 @@
 ---
-title: ESH Canberra 2019
 layout: post
+title: ESH Canberra 2019
 date: 2019-04-16
-description: The Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.
 image: esh_logo_canberra2019.png
 categories: ["Evidence Synthesis Hackathon", "Software Development"]
 ---
 
-The Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.
+<p class="intro"><span class="dropcap">T</span>he Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.</p>
 
 > Evidence synthesis is the process of converting scientific outputs – such as articles, reports and data – into reliable and digestible evidence that can inform management and policy.
 > [https://evidencesynthesishackathon.com](https://evidencesynthesishackathon.com)
