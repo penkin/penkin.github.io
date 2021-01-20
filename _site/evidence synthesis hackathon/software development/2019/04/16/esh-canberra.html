@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Don't Jump | ESH Canberra 2019</title>
+
+  <link href="/css/milo.css" rel="stylesheet">
+</head>
+
+<body>
+ <header role="banner">
+    <nav class="navbar navbar-expand-md navbar-light bg-white absolute-top">
+      <div class="container">
+
+        <button class="navbar-toggler order-2 order-md-1" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3 order-md-2" id="navbar">
+          
+		  <ul class="navbar-nav mr-auto">
+		  
+			
+			    <li class="nav-item">
+			      <a class="nav-link" href="/">Home</a>
+			    </li>
+			
+			    <li class="nav-item">
+			      <a class="nav-link" href="/about">About</a>
+			    </li>
+			
+			    <li class="nav-item">
+			      <a class="nav-link" href="/author">Author</a>
+			    </li>
+						
+          	</ul>
+		  
+        </div>
+
+        <a class="navbar-brand mx-auto order-1 order-md-3" href="">Don't Jump</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="main pt-4" role="main">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-9">
+
+          <article class="card mb-4">
+		  
+            <header class="card-header text-center">
+			
+              <div class="card-meta">
+                <span>Published on 16 Apr 2019</time></span> in
+                  
+                  
+                  <a href="/categories/#Evidence Synthesis Hackathon">Evidence Synthesis Hackathon</a>
+                  &nbsp;
+                  
+                  <a href="/categories/#Software Development">Software Development</a>
+                  
+                  
+              <div>
+			
+                <h1 class="card-title">ESH Canberra 2019</h1>
+
+            </header>
+			
+			
+            <a style="cursor:pointer;">
+              <img class="card-img" src="/img/esh_logo_canberra2019.png" alt="" />
+            </a>
+            
+            
+            <div class="card-body">
+			<p>The Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.</p>
+
+<blockquote>
+  <p>Evidence synthesis is the process of converting scientific outputs – such as articles, reports and data – into reliable and digestible evidence that can inform management and policy.
+<a href="https://evidencesynthesishackathon.com">https://evidencesynthesishackathon.com</a></p>
+</blockquote>
+
+<h2 id="how-does-the-esh-work">How does the ESH work?</h2>
+
+<p>A number of people are invited from various backgrounds within evidence synthesis, either from a purely academic side, software engineer side or a little of both. There is a list of potential “problems” to solve either by writing a paper on the topic or creating software to ease the pain of the current process. As a software developer with little to no academic background, I end up trying to write software to make a specific process a little less painful.</p>
+
+<p>I find this amazingly fulfilling and interesting. 1. I need to understand the problem sphere to be able to make anything useful to those that need the solution and 2. any help given is normally hugely appreciated.</p>
+
+<h2 id="what-i-worked-on">What I worked on.</h2>
+
+<p>So the problem I found the most intriguing was the problem of grey literature research. In evidence synthesis it is relatively easy to find published literature on a given topic, and to record what the search string was used in which database, how many records were found, how many were used or not used and why.</p>
+
+<p>All that is solved with expensive published databases. What if you want the same sort of transparency and repeatability for grey literature searches which can quite literally be done on any website on the internet</p>
+
+<h2 id="our-solution">Our Solution</h2>
+
+<p>There are two parts to our solution, 1. a Google Chrome extension and 2. a web application to manage the results of the Google Chrome extension.</p>
+
+<h3 id="google-chrome-extension">Google Chrome Extension</h3>
+
+<p>What I started working on with partner on the project, Mandlenkosi, is a <a href="https://developer.chrome.com/extensions">Google Chrome extension</a> that you train on the search results of the current website that you are on. It will then record the results – as <a href="https://en.wikipedia.org/wiki/JSON">JSON</a>, <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> and potentially <a href="https://en.wikipedia.org/wiki/RIS_(file_format)">RIS</a> – as well as the URL of the site and the search string used.</p>
+
+<p>The reason we decided on a Chrome extension for this part of the problem is to keep the solution as generic as possible without the need to keep a library of web-scraping scripts for all possible – or most used – websites that can easily go out of date if those sites structures are ever changed. With the extension you can easily start your search, click on the extension and tell it where the 1st result item is, tag all the relevant data in that result and automatically scrape the rest of the results and pages. Even if the markup changes for the site the next time you go to it will not matter as the extension is shown each time what elements on the page you’re interested in.</p>
+
+<h3 id="web-application">Web Application</h3>
+
+<p>The 2nd part of the solution is to create a web application that can take the results of the Chrome extension and retrieve all the metadata around what you’ve extracted like link details, attached PDFs etc.</p>
+
+<p>The way I imagine this all working is that you will also be able to select results you want to use, and discard those that you do not want to use with reasons for your decision.</p>
+
+<h2 id="the-result">The Result</h2>
+
+<p>There is only so much a jet-lagged, sleep-deprived person can do in three days. What we do have so far is a good proof of concept. Our code for the Google Chrome extension is available on <a href="https://github.com/ESHackathon/grey-literature-recorder">GitHub</a> if you want to contribute in any way. It’s still very raw and we need a lot of polish around the readme, contribution and licensing docs.</p>
+
+            <hr />
+			<div class="pg-center">
+
+<div class="comments">
+  <h2>Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>
+var disqus_config = function () {
+  this.page.url = '/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html'; // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = '/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = '//disqus-demo-page.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+</div>
+<style>
+.pg-center{
+background:#ffffff;
+padding-top:2rem;
+padding-bottom:2rem;
+margin-top:2rem;
+}
+</style>
+
+		<hr />		    
+            </div>
+          </article><!-- /.card -->
+        </div>
+		        <div class="col-md-3 ml-auto">
+
+          <aside class="sidebar">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4 class="card-title">About</h4>
+                <p class="card-text">Inside the head of Christopher Penkin. My thoughts and opinions are my own.</p>
+              </div>
+            </div>
+          </aside>
+
+		  
+          <aside class="sidebar sidebar-sticky">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4 class="card-title">Categories</h4>
+				
+				    
+                <a class="btn btn-light btn-sm mb-1" href="/categories/#Privacy">
+                Privacy,</a>
+				
+				    
+                <a class="btn btn-light btn-sm mb-1" href="/categories/#Social Media">
+                Social Media,</a>
+				
+				    
+                <a class="btn btn-light btn-sm mb-1" href="/categories/#Evidence Synthesis Hackathon">
+                Evidence Synthesis Hackathon,</a>
+				
+				    
+                <a class="btn btn-light btn-sm mb-1" href="/categories/#Software Development">
+                Software Development,</a>
+				
+				    
+                <a class="btn btn-light btn-sm mb-1" href="/categories/#Apple">
+                Apple,</a>
+				
+				    
+                <a class="btn btn-light btn-sm mb-1" href="/categories/#Gadgets">
+                Gadgets,</a>
+				
+				    
+                <a class="btn btn-light btn-sm mb-1" href="/categories/#Smartwatch">
+                Smartwatch</a>
+				
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                
+				<h4 class="card-title">Latest posts</h4>
+				
+                <a href="/software%20development/2020/01/25/bin-obj-folders.html" class="d-inline-block">
+                  <h4 class="h6">Deleting “bin” & “obj” folders in a .NET solution.</h4>
+                  
+				  <img class="card-img" src="/img/code.jpg" alt="" />
+				  
+                </a>
+				<br />
+                <time>On 25 Jan 2020</time> in Software Development
+				<hr />
+				
+                <a href="/software%20development/2020/01/25/step-back.html" class="d-inline-block">
+                  <h4 class="h6">Step Back, Take a Breath, Try Later</h4>
+                  
+				  <img class="card-img" src="/img/step-back.jpg" alt="" />
+				  
+                </a>
+				<br />
+                <time>On 25 Jan 2020</time> in Software Development
+				<hr />
+				
+              </div>
+            </div>
+          </aside>
+
+        </div>
+	
+      </div>
+    </div>
+  </main>
+<!--   <div class="site-newsletter">
+    <div class="container">
+      <div class="text-center">
+        <h3 class="h4 mb-2">Subscribe to our newsletter</h3>
+        <p class="text-muted">Join our monthly newsletter and never miss out on new stories and promotions.</p>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 ml-auto mr-auto">
+            <div class="input-group mb-3 mt-3">
+              <input type="text" class="form-control" placeholder="Email address" aria-label="Email address">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">Subscribe</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+  <footer class="site-footer bg-darkest" role="contentinfo">
+    <div class="container">
+
+<!--       <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Privacy policy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul> -->
+      <div class="copy">
+        &copy; Don't Jump 2019<br />
+        All rights reserved
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/js/bundle.js"></script>
+
+</body>
+</html>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Penkin</title><link href="http://penkin.net/" rel="alternate"></link><link href="http://penkin.net/feeds/all.atom.xml" rel="self"></link><id>http://penkin.net/</id><updated>2017-03-21T21:57:00+02:00</updated><entry><title>Hello World</title><link href="http://penkin.net/hello-world.html" rel="alternate"></link><published>2017-03-21T21:57:00+02:00</published><updated>2017-03-21T21:57:00+02:00</updated><author><name>Christopher Penkin</name></author><id>tag:penkin.net,2017-03-21:/hello-world.html</id><summary type="html">&lt;p&gt;My obligatory hello post and why I'm here.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I start a blog. Why? Well I want to become a better communicator. So to do that I'm
-going to put my thoughts on business, life, software development and everything in between
-right here; in this blog.&lt;/p&gt;
-&lt;p&gt;I think it will be a great way to chronicle my journey in all aspects; maybe even write
-some how-tos so I don't forget them later?&lt;/p&gt;
-&lt;p&gt;So &lt;strong&gt;hello world&lt;/strong&gt;, see you all in the next article.&lt;/p&gt;</content><category term="writing"></category><category term="blog"></category></entry></feed>

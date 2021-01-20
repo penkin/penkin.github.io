@@ -1,1 +1,30 @@
-theme: jekyll-theme-tactile
+title: "Don't Jump"
+
+about: "Inside the head of Christopher Penkin. My thoughts and opinions are my own."
+markdown: kramdown
+url: ""
+baseurl: ""
+disqus_short_name: disqus-demo-page
+
+plugins: 
+  - jekyll-paginate
+  - jemoji
+  
+paginate_path: "/page:num/"
+
+paginate: 5
+
+main_toc:
+  - title: Home
+    url: ""
+  - title: About
+    url: "about"
+  - title: Author
+    url: "author"
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
