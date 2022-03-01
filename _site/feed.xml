@@ -5,8 +5,8 @@
     <description>Christian. Husband. Father. South African. Nerd.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Mar 2022 15:59:26 +0200</pubDate>
-    <lastBuildDate>Tue, 01 Mar 2022 15:59:26 +0200</lastBuildDate>
+    <pubDate>Tue, 01 Mar 2022 16:04:27 +0200</pubDate>
+    <lastBuildDate>Tue, 01 Mar 2022 16:04:27 +0200</lastBuildDate>
     <generator>Jekyll v4.2.1</generator><item>
         <title>How to fix Postgres sequence sync issues</title>
         <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;E&lt;/span&gt;very so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your &lt;a href=&quot;https://www.postgresql.org/&quot; target=&quot;_blank&quot;&gt;Postgres&lt;/a&gt; database. &lt;strong&gt;Let's see how we can solve that easily.&lt;/strong&gt;&lt;/p&gt;
@@ -44,7 +44,7 @@
 
 &lt;p&gt;All you need to do now is to copy the output and paste it into your query window and run the generated SQL to update your sequences.&lt;/p&gt;
 </description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;E&lt;/span&gt;very so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your &lt;a href=&quot;https://www.postgresql.org/&quot; target=&quot;_blank&quot;&gt;Postgres&lt;/a&gt; database. &lt;strong&gt;Let's see how we can solve that easily.&lt;/strong&gt;&lt;/p&gt;
-</description><pubDate>Tue, 01 Feb 2022 00:00:00 +0200</pubDate>
+</description><pubDate>Tue, 01 Mar 2022 00:00:00 +0200</pubDate>
         <link>/blog/postgres-sequences/</link>
         <guid isPermaLink="true">/blog/postgres-sequences/</guid><category>Postgres</category><category>Databases</category></item><item>
         <title>Being Intentional</title>
