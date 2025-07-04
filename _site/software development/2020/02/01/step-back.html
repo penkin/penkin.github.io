@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Penkin</title>
+    <link rel="stylesheet" href="/assets/css/main.min.css" />
+    <script>
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+          document.documentElement.removeAttribute('data-theme');
+      }
+  </script>
+  </head>
+  <body class="font-sans text-gray-900 dark:text-gray-300 bg-white dark:bg-gray-900 antialiased flex justify-center">
+    <div class="px-6 py-8 md:px-16 lg:px-24 lg:py-16 max-w-[85ch]">
+      <header class="relative z-20 mb-10">
+  <div class="flex flex-row justify-between items-start max-w-full">
+    <div class="flex flex-row gap-2 md:gap-4 lg:gap-8 items-center">
+      <a href="/" class="flex items-center no-underline">
+        <img src="https://avatars.githubusercontent.com/u/771661"
+             alt="Portriat of Christopher Penkin"
+             class="h-12 w-12 rounded md:h-16 md:w-16 lg:h-20 lg:w-20"/>
+      </a>
+      <div class="flex flex-col gap-2">
+        <div class="flex flex-row gap-4 items-center">
+          <a href="/" class="text-xl font-extrabold leading-none no-underline hover:text-sky-600 lg:text-3xl lg:leading-tight">
+            Christopher Penkin
+          </a>
+        </div>
+        <div class="hidden md:flex uppercase tracking-wide text-xs space-x-6"><a
+            href="/"
+            class="font-semibold text-gray-600 dark:text-gray-400 no-underline hover:text-sky-600"
+            >About</a
+          ><a
+            href="/blog"
+            class="font-semibold text-gray-600 dark:text-gray-400 no-underline hover:text-sky-600"
+            >Blog</a
+          ></div>
+      </div>
+    </div>
+    <div class="hidden md:flex">
+      <div class="relative inline-flex flex-row items-center border-1 rounded-full border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300">
+    <div id="themeToggleSlider" class="w-[33%] border-1 border-gray-300 dark:border-gray-600 transition-[left] absolute left-0 h-full rounded-full"></div>
+
+    <button id="btnThemeSystem" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M2 4.25A2.25 2.25 0 0 1 4.25 2h7.5A2.25 2.25 0 0 1 14 4.25v5.5A2.25 2.25 0 0 1 11.75 12h-1.312c.1.128.21.248.328.36a.75.75 0 0 1 .234.545v.345a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-.345a.75.75 0 0 1 .234-.545c.118-.111.228-.232.328-.36H4.25A2.25 2.25 0 0 1 2 9.75v-5.5Zm2.25-.75a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h7.5a.75.75 0 0 0 .75-.75v-4.5a.75.75 0 0 0-.75-.75h-7.5Z" clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <button id="btnThemeLight" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1ZM10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM12.95 4.11a.75.75 0 1 0-1.06-1.06l-1.062 1.06a.75.75 0 0 0 1.061 1.062l1.06-1.061ZM15 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 15 8ZM11.89 12.95a.75.75 0 0 0 1.06-1.06l-1.06-1.062a.75.75 0 0 0-1.062 1.061l1.061 1.06ZM8 12a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12ZM5.172 11.89a.75.75 0 0 0-1.061-1.062L3.05 11.89a.75.75 0 1 0 1.06 1.06l1.06-1.06ZM4 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 4 8ZM4.11 5.172A.75.75 0 0 0 5.173 4.11L4.11 3.05a.75.75 0 1 0-1.06 1.06l1.06 1.06Z" />
+        </svg>
+    </button>
+
+    <button id="btnThemeDark" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path d="M14.438 10.148c.19-.425-.321-.787-.748-.601A5.5 5.5 0 0 1 6.453 2.31c.186-.427-.176-.938-.6-.748a6.501 6.501 0 1 0 8.585 8.586Z" />
+        </svg>
+    </button>
+</div>
+    </div>
+    <div class="block md:hidden">
+      <button id="menu-button" class="block">
+        <svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          class="block h-6 w-6"
+        >
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+        <svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          class="hidden h-6 w-6"
+        >
+          <path
+            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+      <div id="menu" class="fixed inset-0 z-10 hidden bg-white dark:bg-gray-900 pt-24 md:hidden">
+  <div class="space-y-8 overflow-y-auto pt-6 pb-8 px-6 max-h-full"><a
+      href="/"
+      class="block font-bold no-underline"
+      >About</a
+    ><a
+      href="/blog"
+      class="block font-bold no-underline"
+      >Blog</a
+    ><div>
+      <div class="relative inline-flex flex-row items-center border-1 rounded-full border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300">
+    <div id="themeToggleSlider" class="w-[33%] border-1 border-gray-300 dark:border-gray-600 transition-[left] absolute left-0 h-full rounded-full"></div>
+
+    <button id="btnThemeSystem" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M2 4.25A2.25 2.25 0 0 1 4.25 2h7.5A2.25 2.25 0 0 1 14 4.25v5.5A2.25 2.25 0 0 1 11.75 12h-1.312c.1.128.21.248.328.36a.75.75 0 0 1 .234.545v.345a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-.345a.75.75 0 0 1 .234-.545c.118-.111.228-.232.328-.36H4.25A2.25 2.25 0 0 1 2 9.75v-5.5Zm2.25-.75a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h7.5a.75.75 0 0 0 .75-.75v-4.5a.75.75 0 0 0-.75-.75h-7.5Z" clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <button id="btnThemeLight" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1ZM10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM12.95 4.11a.75.75 0 1 0-1.06-1.06l-1.062 1.06a.75.75 0 0 0 1.061 1.062l1.06-1.061ZM15 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 15 8ZM11.89 12.95a.75.75 0 0 0 1.06-1.06l-1.06-1.062a.75.75 0 0 0-1.062 1.061l1.061 1.06ZM8 12a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12ZM5.172 11.89a.75.75 0 0 0-1.061-1.062L3.05 11.89a.75.75 0 1 0 1.06 1.06l1.06-1.06ZM4 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 4 8ZM4.11 5.172A.75.75 0 0 0 5.173 4.11L4.11 3.05a.75.75 0 1 0-1.06 1.06l1.06 1.06Z" />
+        </svg>
+    </button>
+
+    <button id="btnThemeDark" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path d="M14.438 10.148c.19-.425-.321-.787-.748-.601A5.5 5.5 0 0 1 6.453 2.31c.186-.427-.176-.938-.6-.748a6.501 6.501 0 1 0 8.585 8.586Z" />
+        </svg>
+    </button>
+</div>
+    </div>
+  </div>
+</div>
+
+      <div class="container">
+        <div class="post">
+    <h1 class="mb-4 text-2xl font-extrabold text-black">Step Back, Take a Breath, Try Later</h1>
+    <aside
+  class="mb-6 flex flex-col gap-3 text-xs font-semibold uppercase text-gray-600 dark:text-gray-400"
+>
+  <div class="flex items-center gap-2">
+    <time>February 01, 2020 </time>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+      />
+    </svg>
+    <span>
+      <span>1</span>
+      minute read
+    </span>
+  </div>
+</aside>
+
+    <article class="text-grey-darkest space-y-6"><p>This happens to me way more than I’d like to admit and I’m hoping that by writing it down here I will learn from my mistakes. Maybe you’re making this mistake and could learn as well, please don’t tell me I’m the only one doing this!?</p>
+
+<h2 id="so-it-goes-something-like-this">So it goes something like this;</h2>
+
+<ul>
+  <li>Start a task.</li>
+  <li>Struggle for a while.</li>
+  <li>Get tired.</li>
+  <li>Don’t stop, just push through, you HAVE TO finish this tonight!</li>
+  <li>Get more tired.</li>
+  <li>Struggle more.</li>
+  <li>Eventually, you give up, you hear the birds chirping outside.</li>
+  <li>Go to bed, get what little sleep you can still get.</li>
+  <li>Wake up and have another go at the problem.</li>
+  <li>5 minutes later, problem solved.</li>
+</ul>
+
+<h2 id="wheres-the-problem">Where’s the problem?</h2>
+
+<p>It occurs to me that I was just too tired to think up and implement the solution. Soon as I get the sleep my brain needs to function, the solution seems to come quickly. This has happened to me more than I’d be comfortable admitting. Instead of losing all those hours, time to read, or do a hobby or get that needed sleep was wasted staring at a monitor, stuck in a “solution” rut. All I needed to do was step back, take a breath, try again later. If that later happens to be the next day then it happens the next day.</p>
+
+<p>I have this bad habit of not being able to leave a task that I’m struggling with. I have to win, I have to beat it. There is no surrender, well none until I just cannot keep my eyes open anymore.</p>
+
+<h2 id="so-what-now">So what now?</h2>
+
+<p>Well now… I take a step back, breathe and come back later. There is a lot on my plate as well, there are always smaller simple tasks I can do to distract me from the difficult exciting one holding me back. Something to clear the mind before I take another stab at it. If it’s late, that task is to <a href="https://www.ideasforleaders.com/ideas/the-importance-of-sleep-for-work">sleep</a>.</p>
+
+<p>Here is some more interesting reading on <a href="https://link.springer.com/article/10.3758%2Fs13421-012-0256-7">sleep and problem-solving</a>, especially if they’re difficult problems.</p>
+</article>
+    <div
+  class="mt-6 flex items-center gap-2 text-xs font-semibold uppercase text-gray-600 dark:text-gray-400"
+>
+  
+  <span
+    class="border-1 flex items-center gap-1 rounded border-gray-600 dark:border-gray-400 px-1 py-0.5"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      fill="currentColor"
+      class="size-4"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    <span>Software Development</span>
+  </span>
+  
+</div>
+<div
+  class="my-6 flex justify-between gap-2 text-xs font-semibold uppercase text-gray-600"
+><a
+    class="flex items-center gap-1 hover:text-sky-600"
+    href="/apple/gadgets/smartwatch/2020/01/25/smartwatches.html"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+      />
+    </svg>
+    <span> My Problem With Smartwatches </span>
+  </a><a
+    class="flex items-center gap-1 hover:text-sky-600"
+    href="/software%20development/2020/04/21/bin-obj-folders.html"
+  >
+    <span>Deleting “bin” & “obj” folders in a .NET solution. </span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+      />
+    </svg>
+  </a></div>
+
+</div>
+
+      </div>
+      <footer class="text-gray-700 dark:text-gray-500 text-center mt-12">
+    Copyright © 2025 Christopher Penkin. All rights reserved.
+</footer>
+    </div>
+    <script src="/assets/js/main.js"></script>
+    
+  </body>
+</html>

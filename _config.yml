@@ -1,33 +1,32 @@
 title: Don't Jump
-description: Christian. Husband. Father. South African. Nerd.
-url: ""
+email: chris@penkin.me
+description: >- # this means to ignore newlines until "baseurl:"
+  Don't Jump is a look inside some of my thoughts and ideas. I write here from time
+  to time about anything that catches my fancy.
 baseurl: ""
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
-header: large
+url: "https://penkin.me"
+google_analytics: UA-XXXXXXXX-X
 
-# Header Option
-# header: large
-
-markdown: kramdown
 highlighter: rouge
-plugins: [jekyll-paginate]
-paginate: 5
 
-navigation:
-  - title: Home
-    url: /index.html
-  - title: About
-    url: /about
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# kramdown:
+#   parse_block_html: true
 
 social:
-  github: penkin
-  twitter: penkin
-  facebook: 
-  email: 
-  linkedin: penkin
+  - title: Twitter
+    url: https://twitter.com/penkin
+  - title: GitHub
+    url: https://github.com/penkin
 
-clicky_analytics: 101164136
+navigation:
+  - title: About
+    url: /
+  - title: Blog
+    url: /blog
 
-disqus:
-    shortname: 
+plugins:
+  - jekyll-feed
+  - jekyll-paginate

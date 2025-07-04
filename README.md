@@ -1,1 +1,0 @@
-My personal blog called don't jump.

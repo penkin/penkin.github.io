@@ -1,0 +1,168 @@
+div.highlight, figure.highlight {
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  overflow-x: scroll;
+  scrollbar-color: rgb(47, 47, 72) rgb(30, 30, 46);
+  scrollbar-width: thin;
+}
+
+/* Base styles */
+.highlight {
+  color: #cdd6f4; /* text */
+  background-color: #1e1e2e; /* base */
+}
+.highlight table td {
+  padding: 5px;
+}
+.highlight table pre {
+  margin: 0;
+}
+
+/* Comments */
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cpf,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+  color: #585b70; /* surface2 */
+  font-style: italic;
+}
+.highlight .cp {
+  color: #585b70;
+  font-weight: bold;
+}
+
+/* Errors */
+.highlight .err {
+  color: #f38ba8; /* red */
+  background-color: #11111b; /* crust */
+}
+
+/* Diff */
+.highlight .gi {
+  color: #a6e3a1; /* green */
+  background-color: #2b303b; /* custom */
+}
+.highlight .gd {
+  color: #f38ba8; /* red */
+  background-color: #2b303b; /* custom */
+}
+
+/* Generic emphasis */
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+
+/* Headings, prompt etc */
+.highlight .gh {
+  color: #94e2d5; /* teal */
+}
+.highlight .go {
+  color: #6c7086; /* muted */
+}
+.highlight .gp {
+  color: #74c7ec; /* sapphire */
+}
+.highlight .gu {
+  color: #89b4fa; /* blue */
+}
+.highlight .gt,
+.highlight .gr {
+  color: #f38ba8; /* red */
+}
+
+/* Keywords and declarations */
+.highlight .k,
+.highlight .kv,
+.highlight .kc,
+.highlight .kd,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .sa {
+  color: #f38ba8; /* red */
+  font-weight: bold;
+}
+
+/* Operators and punctuations */
+.highlight .o,
+.highlight .ow,
+.highlight .kn {
+  color: #f38ba8; /* red */
+  font-weight: bold;
+}
+
+/* Numbers */
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mx {
+  color: #fab387; /* peach */
+}
+
+/* Strings */
+.highlight .s,
+.highlight .dl,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s1,
+.highlight .s2,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss {
+  color: #a6e3a1; /* green */
+}
+
+/* Builtins */
+.highlight .nb,
+.highlight .bp {
+  color: #cdd6f4; /* text */
+}
+.highlight .no {
+  color: #fab387; /* peach */
+}
+
+/* Names, identifiers */
+.highlight .na {
+  color: #f9e2af; /* yellow */
+}
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .fm {
+  color: #89b4fa; /* blue */
+  font-weight: bold;
+}
+.highlight .nn,
+.highlight .ni,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm,
+.highlight .nl {
+  color: #cdd6f4; /* text */
+}
+
+/* Tags */
+.highlight .nt {
+  color: #89dceb; /* sky */
+}
+
+/* Whitespace */
+.highlight .w {
+  color: #585b70; /* surface2 as invisible */
+}

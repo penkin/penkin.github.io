@@ -5,7 +5,7 @@ image: smartwatches.jpg
 categories: ["Apple", "Gadgets", "Smartwatch"]
 ---
 
-<p class="intro"><span class="dropcap">I</span> got an Apple Watch to monitor my health; notifications got in the way.</p>
+I got an Apple Watch to monitor my health; notifications got in the way.
 
 I’ve had an [Apple Watch](https://www.apple.com/watch/) for a little while now. I got it mostly to help me monitor my health and send some of that information to my medical aid as part of their rewards program. The more I move, the more points I get, the more benefits I enjoy.
 

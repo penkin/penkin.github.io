@@ -5,7 +5,7 @@ image: elephant.jpg
 categories: ["Postgres", "Databases"]
 ---
 
-<p class="intro"><span class="dropcap">E</span>very so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your <a href="https://www.postgresql.org/" target="_blank">Postgres</a> database. <strong>Let's see how we can solve that easily.</strong></p>
+Every so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your [Postgres](https://www.postgresql.org/) database. Let's see how we can solve that easily.
 
 Firstly we can create a script to interrogate some of the internal Postgres tables to automatically get us all the tables and sequences we have in our DB.
 

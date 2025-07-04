@@ -1,0 +1,14 @@
+<div id="menu" class="fixed inset-0 z-10 hidden bg-white dark:bg-gray-900 pt-24 md:hidden">
+  <div class="space-y-8 overflow-y-auto pt-6 pb-8 px-6 max-h-full">
+    {%- for link in site.navigation -%}
+    <a
+      href="{{ link.url | prepend: site.baseurl }}"
+      class="block font-bold no-underline"
+      >{{ link.title }}</a
+    >
+    {%- endfor -%}
+    <div>
+      {% include theme-toggle.html %}
+    </div>
+  </div>
+</div>

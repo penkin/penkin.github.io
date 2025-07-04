@@ -1,14 +1,52 @@
- <div class="header {% if site.header == "large" %}header--large{% endif %}">
-     <div class="container">
-         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-         <nav class="nav-collapse">
-             <ul class="noList">
-                 {%- for link in site.navigation -%}{%- assign current = nil -%}{%- if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' -%}{%- assign current = 'current' -%}{%- endif -%}
-                 <li class="element {%- if forloop.first -%}first{%- endif -%} {{ current }} {%- if forloop.last -%}last{%- endif -%}">
-                     <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
-                 </li> 
-                 {%- endfor -%}
-             </ul>
-         </nav>
-     </div>
- </div><!-- end .header -->
+<header class="relative z-20 mb-10">
+  <div class="flex flex-row justify-between items-start max-w-full">
+    <div class="flex flex-row gap-2 md:gap-4 lg:gap-8 items-center">
+      <a href="/" class="flex items-center no-underline">
+        <img src="https://avatars.githubusercontent.com/u/771661"
+             alt="Portriat of Christopher Penkin"
+             class="h-12 w-12 rounded md:h-16 md:w-16 lg:h-20 lg:w-20"/>
+      </a>
+      <div class="flex flex-col gap-2">
+        <div class="flex flex-row gap-4 items-center">
+          <a href="/" class="text-xl font-extrabold leading-none no-underline hover:text-sky-600 lg:text-3xl lg:leading-tight">
+            Christopher Penkin
+          </a>
+        </div>
+        <div class="hidden md:flex uppercase tracking-wide text-xs space-x-6">
+          {%- for link in site.navigation -%}
+          <a
+            href="{{ link.url | prepend: site.baseurl }}"
+            class="font-semibold text-gray-600 dark:text-gray-400 no-underline hover:text-sky-600"
+            >{{ link.title }}</a
+          >
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+    <div class="hidden md:flex">
+      {% include theme-toggle.html %}
+    </div>
+    <div class="block md:hidden">
+      <button id="menu-button" class="block">
+        <svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          class="block h-6 w-6"
+        >
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+        <svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          class="hidden h-6 w-6"
+        >
+          <path
+            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>

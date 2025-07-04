@@ -5,11 +5,10 @@ image: code.jpg
 categories: ["Software Development"]
 ---
 
-<p class="intro"><span class="dropcap">R</span>ecently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.</p>
-
+Recently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.
 
 <figure>
-	<img src="{{ '/assets/img/code1.jpg' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/code1.jpg' | prepend: site.baseurl }}" alt="">
 	<figcaption>Fig1. - Didn't find the associated module for the breakpoint</figcaption>
 </figure>
 
@@ -19,7 +18,7 @@ Since the project I’m working on is pretty big, going through all the director
 
 I created a file in the solution’s root directory called DeleteBinObjFolders.sh. I wrote the following in the file;
 
-{%- highlight bash -%}
+{%- highlight bat -%}
 echo "Deleting all bin and obj folders..."
 find . -iname "bin" -o -iname "obj" | xargs rm -rf
 echo "Your bin and obj folders deleted!"

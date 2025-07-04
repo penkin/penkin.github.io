@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Penkin</title>
+    <link rel="stylesheet" href="/assets/css/main.min.css" />
+    <script>
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+          document.documentElement.removeAttribute('data-theme');
+      }
+  </script>
+  </head>
+  <body class="font-sans text-gray-900 dark:text-gray-300 bg-white dark:bg-gray-900 antialiased flex justify-center">
+    <div class="px-6 py-8 md:px-16 lg:px-24 lg:py-16 max-w-[85ch]">
+      <header class="relative z-20 mb-10">
+  <div class="flex flex-row justify-between items-start max-w-full">
+    <div class="flex flex-row gap-2 md:gap-4 lg:gap-8 items-center">
+      <a href="/" class="flex items-center no-underline">
+        <img src="https://avatars.githubusercontent.com/u/771661"
+             alt="Portriat of Christopher Penkin"
+             class="h-12 w-12 rounded md:h-16 md:w-16 lg:h-20 lg:w-20"/>
+      </a>
+      <div class="flex flex-col gap-2">
+        <div class="flex flex-row gap-4 items-center">
+          <a href="/" class="text-xl font-extrabold leading-none no-underline hover:text-sky-600 lg:text-3xl lg:leading-tight">
+            Christopher Penkin
+          </a>
+        </div>
+        <div class="hidden md:flex uppercase tracking-wide text-xs space-x-6"><a
+            href="/"
+            class="font-semibold text-gray-600 dark:text-gray-400 no-underline hover:text-sky-600"
+            >About</a
+          ><a
+            href="/blog"
+            class="font-semibold text-gray-600 dark:text-gray-400 no-underline hover:text-sky-600"
+            >Blog</a
+          ></div>
+      </div>
+    </div>
+    <div class="hidden md:flex">
+      <div class="relative inline-flex flex-row items-center border-1 rounded-full border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300">
+    <div id="themeToggleSlider" class="w-[33%] border-1 border-gray-300 dark:border-gray-600 transition-[left] absolute left-0 h-full rounded-full"></div>
+
+    <button id="btnThemeSystem" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M2 4.25A2.25 2.25 0 0 1 4.25 2h7.5A2.25 2.25 0 0 1 14 4.25v5.5A2.25 2.25 0 0 1 11.75 12h-1.312c.1.128.21.248.328.36a.75.75 0 0 1 .234.545v.345a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-.345a.75.75 0 0 1 .234-.545c.118-.111.228-.232.328-.36H4.25A2.25 2.25 0 0 1 2 9.75v-5.5Zm2.25-.75a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h7.5a.75.75 0 0 0 .75-.75v-4.5a.75.75 0 0 0-.75-.75h-7.5Z" clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <button id="btnThemeLight" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1ZM10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM12.95 4.11a.75.75 0 1 0-1.06-1.06l-1.062 1.06a.75.75 0 0 0 1.061 1.062l1.06-1.061ZM15 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 15 8ZM11.89 12.95a.75.75 0 0 0 1.06-1.06l-1.06-1.062a.75.75 0 0 0-1.062 1.061l1.061 1.06ZM8 12a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12ZM5.172 11.89a.75.75 0 0 0-1.061-1.062L3.05 11.89a.75.75 0 1 0 1.06 1.06l1.06-1.06ZM4 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 4 8ZM4.11 5.172A.75.75 0 0 0 5.173 4.11L4.11 3.05a.75.75 0 1 0-1.06 1.06l1.06 1.06Z" />
+        </svg>
+    </button>
+
+    <button id="btnThemeDark" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path d="M14.438 10.148c.19-.425-.321-.787-.748-.601A5.5 5.5 0 0 1 6.453 2.31c.186-.427-.176-.938-.6-.748a6.501 6.501 0 1 0 8.585 8.586Z" />
+        </svg>
+    </button>
+</div>
+    </div>
+    <div class="block md:hidden">
+      <button id="menu-button" class="block">
+        <svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          class="block h-6 w-6"
+        >
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+        <svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          class="hidden h-6 w-6"
+        >
+          <path
+            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+      <div id="menu" class="fixed inset-0 z-10 hidden bg-white dark:bg-gray-900 pt-24 md:hidden">
+  <div class="space-y-8 overflow-y-auto pt-6 pb-8 px-6 max-h-full"><a
+      href="/"
+      class="block font-bold no-underline"
+      >About</a
+    ><a
+      href="/blog"
+      class="block font-bold no-underline"
+      >Blog</a
+    ><div>
+      <div class="relative inline-flex flex-row items-center border-1 rounded-full border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300">
+    <div id="themeToggleSlider" class="w-[33%] border-1 border-gray-300 dark:border-gray-600 transition-[left] absolute left-0 h-full rounded-full"></div>
+
+    <button id="btnThemeSystem" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M2 4.25A2.25 2.25 0 0 1 4.25 2h7.5A2.25 2.25 0 0 1 14 4.25v5.5A2.25 2.25 0 0 1 11.75 12h-1.312c.1.128.21.248.328.36a.75.75 0 0 1 .234.545v.345a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-.345a.75.75 0 0 1 .234-.545c.118-.111.228-.232.328-.36H4.25A2.25 2.25 0 0 1 2 9.75v-5.5Zm2.25-.75a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h7.5a.75.75 0 0 0 .75-.75v-4.5a.75.75 0 0 0-.75-.75h-7.5Z" clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <button id="btnThemeLight" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1ZM10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM12.95 4.11a.75.75 0 1 0-1.06-1.06l-1.062 1.06a.75.75 0 0 0 1.061 1.062l1.06-1.061ZM15 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 15 8ZM11.89 12.95a.75.75 0 0 0 1.06-1.06l-1.06-1.062a.75.75 0 0 0-1.062 1.061l1.061 1.06ZM8 12a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12ZM5.172 11.89a.75.75 0 0 0-1.061-1.062L3.05 11.89a.75.75 0 1 0 1.06 1.06l1.06-1.06ZM4 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 4 8ZM4.11 5.172A.75.75 0 0 0 5.173 4.11L4.11 3.05a.75.75 0 1 0-1.06 1.06l1.06 1.06Z" />
+        </svg>
+    </button>
+
+    <button id="btnThemeDark" class="flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+            <path d="M14.438 10.148c.19-.425-.321-.787-.748-.601A5.5 5.5 0 0 1 6.453 2.31c.186-.427-.176-.938-.6-.748a6.501 6.501 0 1 0 8.585 8.586Z" />
+        </svg>
+    </button>
+</div>
+    </div>
+  </div>
+</div>
+
+      <div class="container">
+        <div class="post">
+    <h1 class="mb-4 text-2xl font-extrabold text-black">Facebook "Free"</h1>
+    <aside
+  class="mb-6 flex flex-col gap-3 text-xs font-semibold uppercase text-gray-600 dark:text-gray-400"
+>
+  <div class="flex items-center gap-2">
+    <time>February 28, 2019 </time>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+      />
+    </svg>
+    <span>
+      <span>2</span>
+      minute read
+    </span>
+  </div>
+</aside>
+
+    <article class="text-grey-darkest space-y-6"><p>Not so long ago I wrote about <a href="/privacy/social%20media/2019/01/23/google-free.html">leaving Google</a>, they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.</p>
+
+<p>Facebook is no different. Also primarily an ad selling company they need to employ pretty much the same tactics as Google. Not only is Facebook in the business of getting as much data about you as possible, but they have business and political agendas that they want to push on you.</p>
+
+<p>Have a look at the recent video <a href="https://www.projectveritas.com/">Project Veritas</a> released below;</p>
+
+<div class="youtube-video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pYSmFI9GAAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>I’m still blown away by the number of <a href="https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636?ns=prod/accounts-wsj">stories</a> that have <a href="https://techcrunch.com/2019/02/21/facebook-removes-onavo/">come out</a> about <a href="https://medium.com/@alecmuffett/a-billion-grains-of-rice-91202220e10e">Facebook</a> in the last little while with little to no impact on their business. As a society, we are so hooked on Facebook crack that we just cannot call it quits.</p>
+
+<p>I think the internet needs is less social media that is BIG and more personal ones. A lot of people want Facebook to stay connected to family and friends that they cannot just quickly pop in to visit. I think being able to set up your own little social network for exactly that makes more sense that signing over all your data to an ad selling company.</p>
+
+<p>I remember seeing an app not so long ago trying to tackle that very problem, <a href="https://joindiaspora.com/">JoinDiaspora*</a>. So you can join an existing pod that is hosted by someone or host your very own and have the people you want to be involved in your pod on it. So you could make a pod for your family or friends and share confidently knowing that your data is not feeding an ad machine or being misused to guide voters in an election.</p>
+
+<p>I have not used Diaspora yet but I’m not sure I have a need for one. I have been off Facebook for a while now with no regrets. You quickly get over that FOMO that you’re missing out. I also have decided not to use Instagram or WhatsApp specifically because they are owned by Facebook. I don’t know if I’m strange but I really have very little need for social media, it mostly seems fake to me.</p>
+</article>
+    <div
+  class="mt-6 flex items-center gap-2 text-xs font-semibold uppercase text-gray-600 dark:text-gray-400"
+>
+  
+  <span
+    class="border-1 flex items-center gap-1 rounded border-gray-600 dark:border-gray-400 px-1 py-0.5"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      fill="currentColor"
+      class="size-4"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    <span>Privacy</span>
+  </span>
+  
+  <span
+    class="border-1 flex items-center gap-1 rounded border-gray-600 dark:border-gray-400 px-1 py-0.5"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      fill="currentColor"
+      class="size-4"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    <span>Social Media</span>
+  </span>
+  
+</div>
+<div
+  class="my-6 flex justify-between gap-2 text-xs font-semibold uppercase text-gray-600"
+><a
+    class="flex items-center gap-1 hover:text-sky-600"
+    href="/privacy/social%20media/2019/01/23/google-free.html"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+      />
+    </svg>
+    <span> Google "Free" </span>
+  </a><a
+    class="flex items-center gap-1 hover:text-sky-600"
+    href="/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html"
+  >
+    <span>ESH Canberra 2019 </span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+      />
+    </svg>
+  </a></div>
+
+</div>
+
+      </div>
+      <footer class="text-gray-700 dark:text-gray-500 text-center mt-12">
+    Copyright © 2025 Christopher Penkin. All rights reserved.
+</footer>
+    </div>
+    <script src="/assets/js/main.js"></script>
+    
+  </body>
+</html>

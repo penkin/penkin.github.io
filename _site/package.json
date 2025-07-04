@@ -1,28 +1,28 @@
 {
-  "name": "long-haul",
-  "version": "0.0.0",
-  "description": "A minimal, type-focused Jekyll theme. ",
-  "main": "gulpfile.js",
+  "name": "penkin.me",
+  "version": "1.0.0",
+  "description": "Personal blog.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Brian Maier Jr.",
-  "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^2.29.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "1.0.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-sass": "^5.1.0"
+    "build:dev": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/main.min.css --watch",
+    "build:prod": "NODE_ENV=production npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/main.min.css --minify"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brianmaierjr/long-haul.git"
+    "url": "git+ssh://git@github.com/penkin/penkin.github.io.git"
   },
-  "keywords": [
-    "jekyll",
-    "gulp",
-    "sass",
-    "browsersync"
-  ]
+  "author": "Christopher Penkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/penkin/penkin.github.io/issues"
+  },
+  "homepage": "https://github.com/penkin/penkin.github.io#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.8",
+    "tailwindcss": "^4.1.8"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12"
+  }
 }

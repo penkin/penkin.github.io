@@ -5,7 +5,7 @@ image: fb-free-badge.png
 categories: ["Privacy", "Social Media"]
 ---
 
-<p class="intro"><span class="dropcap">N</span>ot so long ago I wrote about [leaving Google](/privacy/social%20media/2019/01/23/google-free.html), they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.</p>
+Not so long ago I wrote about [leaving Google](/privacy/social%20media/2019/01/23/google-free.html), they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.
 
 Facebook is no different. Also primarily an ad selling company they need to employ pretty much the same tactics as Google. Not only is Facebook in the business of getting as much data about you as possible, but they have business and political agendas that they want to push on you.
 
