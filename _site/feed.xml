@@ -3,10 +3,10 @@
   <channel>
     <title>Don&apos;t Jump</title>
     <description>Don&apos;t Jump is a look inside some of my thoughts and ideas. I write here from time to time about anything that catches my fancy.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Jul 2025 09:57:28 +0200</pubDate>
-    <lastBuildDate>Sat, 05 Jul 2025 09:57:28 +0200</lastBuildDate>
+    <link>https://penkin.me/</link>
+    <atom:link href="https://penkin.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 05 Jul 2025 22:24:20 +0200</pubDate>
+    <lastBuildDate>Sat, 05 Jul 2025 22:24:20 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator><item>
         <title>How to fix Postgres sequence sync issues</title>
         <description>&lt;p&gt;Every so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;Postgres&lt;/a&gt; database. Let’s see how we can solve that easily.&lt;/p&gt;
@@ -45,8 +45,8 @@
 &lt;p&gt;All you need to do now is to copy the output and paste it into your query window and run the generated SQL to update your sequences.&lt;/p&gt;
 </description><description>&lt;p&gt;Every so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;Postgres&lt;/a&gt; database. Let’s see how we can solve that easily.&lt;/p&gt;
 </description><pubDate>Tue, 01 Mar 2022 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/postgres/databases/2022/03/01/postgres-sequences.html</link>
-        <guid isPermaLink="true">http://localhost:4000/postgres/databases/2022/03/01/postgres-sequences.html</guid><category>Postgres</category><category>Databases</category></item><item>
+        <link>https://penkin.me/postgres/databases/2022/03/01/postgres-sequences.html</link>
+        <guid isPermaLink="true">https://penkin.me/postgres/databases/2022/03/01/postgres-sequences.html</guid><category>Postgres</category><category>Databases</category></item><item>
         <title>Being Intentional</title>
         <description>&lt;p&gt;Wow has 2021 started at an incredible pace for me. Getting back into the projects I’m working on as &lt;a href=&quot;https://www.digitalsolutionfoundry.co.za/&quot;&gt;DSF&lt;/a&gt; and picking up with clients where we left off in 2020.&lt;/p&gt;
 
@@ -61,8 +61,8 @@
 &lt;p&gt;What I’ve liked so far about this little routine I’m developing is that I can easily see this list when people ask me &lt;strong&gt;“if I have time for…“&lt;/strong&gt; something. I can see what is planned, how long these tasks may take and if I can slot anything more in. I can also plan ahead and put a task for the future and know that that time is booked. This process has saved my sanity quite a bit I have to admit. I’m sure there will be tweaks along the way, but overall, it’s working for me for now.&lt;/p&gt;
 </description><description>&lt;p&gt;Wow has 2021 started at an incredible pace for me. Getting back into the projects I’m working on as &lt;a href=&quot;https://www.digitalsolutionfoundry.co.za/&quot;&gt;DSF&lt;/a&gt; and picking up with clients where we left off in 2020.&lt;/p&gt;
 </description><pubDate>Wed, 20 Jan 2021 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/self%20development/2021/01/20/intentional.html</link>
-        <guid isPermaLink="true">http://localhost:4000/self%20development/2021/01/20/intentional.html</guid><category>Self Development</category></item><item>
+        <link>https://penkin.me/self%20development/2021/01/20/intentional.html</link>
+        <guid isPermaLink="true">https://penkin.me/self%20development/2021/01/20/intentional.html</guid><category>Self Development</category></item><item>
         <title>Deleting “bin” &amp; “obj” folders in a .NET solution.</title>
         <description>&lt;p&gt;Recently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/&quot;&gt;.NET Core&lt;/a&gt; solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.&lt;/p&gt;
 
@@ -91,8 +91,8 @@
 &lt;p&gt;Double click the bat file and &lt;strong&gt;BAM! Victory!&lt;/strong&gt;&lt;/p&gt;
 </description><description>&lt;p&gt;Recently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/&quot;&gt;.NET Core&lt;/a&gt; solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.&lt;/p&gt;
 </description><pubDate>Tue, 21 Apr 2020 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/software%20development/2020/04/21/bin-obj-folders.html</link>
-        <guid isPermaLink="true">http://localhost:4000/software%20development/2020/04/21/bin-obj-folders.html</guid><category>Software Development</category></item><item>
+        <link>https://penkin.me/software%20development/2020/04/21/bin-obj-folders.html</link>
+        <guid isPermaLink="true">https://penkin.me/software%20development/2020/04/21/bin-obj-folders.html</guid><category>Software Development</category></item><item>
         <title>Step Back, Take a Breath, Try Later</title>
         <description>&lt;p&gt;This happens to me way more than I’d like to admit and I’m hoping that by writing it down here I will learn from my mistakes. Maybe you’re making this mistake and could learn as well, please don’t tell me I’m the only one doing this!?&lt;/p&gt;
 
@@ -124,8 +124,8 @@
 &lt;p&gt;Here is some more interesting reading on &lt;a href=&quot;https://link.springer.com/article/10.3758%2Fs13421-012-0256-7&quot;&gt;sleep and problem-solving&lt;/a&gt;, especially if they’re difficult problems.&lt;/p&gt;
 </description><description>&lt;p&gt;This happens to me way more than I’d like to admit and I’m hoping that by writing it down here I will learn from my mistakes. Maybe you’re making this mistake and could learn as well, please don’t tell me I’m the only one doing this!?&lt;/p&gt;
 </description><pubDate>Sat, 01 Feb 2020 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/software%20development/2020/02/01/step-back.html</link>
-        <guid isPermaLink="true">http://localhost:4000/software%20development/2020/02/01/step-back.html</guid><category>Software Development</category></item><item>
+        <link>https://penkin.me/software%20development/2020/02/01/step-back.html</link>
+        <guid isPermaLink="true">https://penkin.me/software%20development/2020/02/01/step-back.html</guid><category>Software Development</category></item><item>
         <title>My Problem With Smartwatches</title>
         <description>&lt;p&gt;I got an Apple Watch to monitor my health; notifications got in the way.&lt;/p&gt;
 
@@ -146,8 +146,8 @@
 &lt;p&gt;&lt;strong&gt;I highly recommend carefully choosing what you allow to take your time and attention.&lt;/strong&gt;&lt;/p&gt;
 </description><description>&lt;p&gt;I got an Apple Watch to monitor my health; notifications got in the way.&lt;/p&gt;
 </description><pubDate>Sat, 25 Jan 2020 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/apple/gadgets/smartwatch/2020/01/25/smartwatches.html</link>
-        <guid isPermaLink="true">http://localhost:4000/apple/gadgets/smartwatch/2020/01/25/smartwatches.html</guid><category>Apple</category><category>Gadgets</category><category>Smartwatch</category></item><item>
+        <link>https://penkin.me/apple/gadgets/smartwatch/2020/01/25/smartwatches.html</link>
+        <guid isPermaLink="true">https://penkin.me/apple/gadgets/smartwatch/2020/01/25/smartwatches.html</guid><category>Apple</category><category>Gadgets</category><category>Smartwatch</category></item><item>
         <title>ESH Canberra 2019</title>
         <description>&lt;p&gt;The Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.&lt;/p&gt;
 
@@ -189,8 +189,8 @@
 &lt;p&gt;There is only so much a jet-lagged, sleep-deprived person can do in three days. What we do have so far is a good proof of concept. Our code for the Google Chrome extension is available on &lt;a href=&quot;https://github.com/ESHackathon/grey-literature-recorder&quot;&gt;GitHub&lt;/a&gt; if you want to contribute in any way. It’s still very raw and we need a lot of polish around the readme, contribution and licensing docs.&lt;/p&gt;
 </description><description>&lt;p&gt;The Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.&lt;/p&gt;
 </description><pubDate>Tue, 16 Apr 2019 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html</link>
-        <guid isPermaLink="true">http://localhost:4000/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html</guid><category>Evidence Synthesis Hackathon</category><category>Software Development</category></item><item>
+        <link>https://penkin.me/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html</link>
+        <guid isPermaLink="true">https://penkin.me/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html</guid><category>Evidence Synthesis Hackathon</category><category>Software Development</category></item><item>
         <title>Facebook &quot;Free&quot;</title>
         <description>&lt;p&gt;Not so long ago I wrote about &lt;a href=&quot;/privacy/social%20media/2019/01/23/google-free.html&quot;&gt;leaving Google&lt;/a&gt;, they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.&lt;/p&gt;
 
@@ -211,8 +211,8 @@
 &lt;p&gt;I have not used Diaspora yet but I’m not sure I have a need for one. I have been off Facebook for a while now with no regrets. You quickly get over that FOMO that you’re missing out. I also have decided not to use Instagram or WhatsApp specifically because they are owned by Facebook. I don’t know if I’m strange but I really have very little need for social media, it mostly seems fake to me.&lt;/p&gt;
 </description><description>&lt;p&gt;Not so long ago I wrote about &lt;a href=&quot;/privacy/social%20media/2019/01/23/google-free.html&quot;&gt;leaving Google&lt;/a&gt;, they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.&lt;/p&gt;
 </description><pubDate>Thu, 28 Feb 2019 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/privacy/social%20media/2019/02/28/facebook-free.html</link>
-        <guid isPermaLink="true">http://localhost:4000/privacy/social%20media/2019/02/28/facebook-free.html</guid><category>Privacy</category><category>Social Media</category></item><item>
+        <link>https://penkin.me/privacy/social%20media/2019/02/28/facebook-free.html</link>
+        <guid isPermaLink="true">https://penkin.me/privacy/social%20media/2019/02/28/facebook-free.html</guid><category>Privacy</category><category>Social Media</category></item><item>
         <title>Google &quot;Free&quot;</title>
         <description>&lt;p&gt;I have long been an advocate of Google, all their services &lt;em&gt;“just work”&lt;/em&gt;. They sync up wonderfully, they’re available everywhere and best of all, &lt;strong&gt;it’s free!&lt;/strong&gt;&lt;/p&gt;
 
@@ -248,6 +248,6 @@
 &lt;p&gt;I have kept my Google account for now just to ensure that everyone that needs to email me has my new email address. Overall, I don’t miss Google at all.&lt;/p&gt;
 </description><description>&lt;p&gt;I have long been an advocate of Google, all their services &lt;em&gt;“just work”&lt;/em&gt;. They sync up wonderfully, they’re available everywhere and best of all, &lt;strong&gt;it’s free!&lt;/strong&gt;&lt;/p&gt;
 </description><pubDate>Wed, 23 Jan 2019 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/privacy/social%20media/2019/01/23/google-free.html</link>
-        <guid isPermaLink="true">http://localhost:4000/privacy/social%20media/2019/01/23/google-free.html</guid><category>Privacy</category><category>Social Media</category></item></channel>
+        <link>https://penkin.me/privacy/social%20media/2019/01/23/google-free.html</link>
+        <guid isPermaLink="true">https://penkin.me/privacy/social%20media/2019/01/23/google-free.html</guid><category>Privacy</category><category>Social Media</category></item></channel>
 </rss>
