@@ -5,8 +5,8 @@
     <description>Don&apos;t Jump is a look inside some of my thoughts and ideas. I write here from time to time about anything that catches my fancy.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Jul 2025 09:49:47 +0200</pubDate>
-    <lastBuildDate>Sat, 05 Jul 2025 09:49:47 +0200</lastBuildDate>
+    <pubDate>Sat, 05 Jul 2025 09:57:28 +0200</pubDate>
+    <lastBuildDate>Sat, 05 Jul 2025 09:57:28 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator><item>
         <title>How to fix Postgres sequence sync issues</title>
         <description>&lt;p&gt;Every so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;Postgres&lt;/a&gt; database. Let’s see how we can solve that easily.&lt;/p&gt;
