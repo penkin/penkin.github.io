@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Being Intentional
+description: Exploring the idea of living intentionally—aligning daily actions with personal values to create a more focused, meaningful life.
 image: intention.jpg
 categories: ["Self Development"]
 ---

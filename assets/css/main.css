@@ -31,6 +31,33 @@ h3 {
   margin-top: 3rem;
 }
 
+blockquote {
+  border-left: 8px solid var(--color-sky-600);
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 2rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+ol li,
+ul li {
+  margin-bottom: .25rem;
+}
+
+ol li::marker,
+ul li::marker {
+  color: var(--color-sky-600);
+}
+
 .container a:not(.no-underline) {
   color: var(--color-sky-600);
   text-decoration: underline;

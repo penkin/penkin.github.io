@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My Problem With Smartwatches
+description: Thoughts on smartwatches, how they fit into daily life, and why the Apple Watch became my wearable of choice after trying life without one.
 image: smartwatches.jpg
 categories: ["Apple", "Gadgets", "Smartwatch"]
 ---

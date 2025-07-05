@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Google "Free"
+description: Exploring the journey to reduce reliance on Google services for social media and daily digital life. Tips, tools, and alternatives for going Google-free.
 image: google-free.png
 categories: ["Privacy", "Social Media"]
 youtubeId: 8n6ubzCzZ5I

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to fix Postgres sequence sync issues
+description: An introduction to PostgreSQL sequences—what they are, how they work, and best practices for using them to generate unique IDs in your database.
 image: elephant.jpg
 categories: ["Postgres", "Databases"]
 ---

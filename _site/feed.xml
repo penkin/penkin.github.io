@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Don&apos;t Jump</title>
-    <description>Don&apos;t Jump is a look inside some of my thoughts and ideas. I write here from time to time about anything that catches my fancy.</description>
-    <link>https://penkin.me/</link>
-    <atom:link href="https://penkin.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Jul 2025 23:01:52 +0200</pubDate>
-    <lastBuildDate>Sat, 05 Jul 2025 23:01:52 +0200</lastBuildDate>
+    <title>Christopher Penkin</title>
+    <description>Christopher shares projects, lessons, and thoughts on clean code, UX design, and creative tinkering—both digital and analog.</description>
+    <link>https://www.penkin.me/</link>
+    <atom:link href="https://www.penkin.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 05 Jul 2025 23:52:43 +0200</pubDate>
+    <lastBuildDate>Sat, 05 Jul 2025 23:52:43 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator><item>
         <title>How to fix Postgres sequence sync issues</title>
         <description>&lt;p&gt;Every so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;Postgres&lt;/a&gt; database. Let’s see how we can solve that easily.&lt;/p&gt;
@@ -45,8 +45,8 @@
 &lt;p&gt;All you need to do now is to copy the output and paste it into your query window and run the generated SQL to update your sequences.&lt;/p&gt;
 </description><description>&lt;p&gt;Every so often you may come accross an error where you get a duplicate key violation when trying to insert a new record into a table in your &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;Postgres&lt;/a&gt; database. Let’s see how we can solve that easily.&lt;/p&gt;
 </description><pubDate>Tue, 01 Mar 2022 00:00:00 +0200</pubDate>
-        <link>https://penkin.me/postgres/databases/2022/03/01/postgres-sequences.html</link>
-        <guid isPermaLink="true">https://penkin.me/postgres/databases/2022/03/01/postgres-sequences.html</guid><category>Postgres</category><category>Databases</category></item><item>
+        <link>https://www.penkin.me/postgres/databases/2022/03/01/postgres-sequences.html</link>
+        <guid isPermaLink="true">https://www.penkin.me/postgres/databases/2022/03/01/postgres-sequences.html</guid><category>Postgres</category><category>Databases</category></item><item>
         <title>Being Intentional</title>
         <description>&lt;p&gt;Wow has 2021 started at an incredible pace for me. Getting back into the projects I’m working on as &lt;a href=&quot;https://www.digitalsolutionfoundry.co.za/&quot;&gt;DSF&lt;/a&gt; and picking up with clients where we left off in 2020.&lt;/p&gt;
 
@@ -61,8 +61,8 @@
 &lt;p&gt;What I’ve liked so far about this little routine I’m developing is that I can easily see this list when people ask me &lt;strong&gt;“if I have time for…“&lt;/strong&gt; something. I can see what is planned, how long these tasks may take and if I can slot anything more in. I can also plan ahead and put a task for the future and know that that time is booked. This process has saved my sanity quite a bit I have to admit. I’m sure there will be tweaks along the way, but overall, it’s working for me for now.&lt;/p&gt;
 </description><description>&lt;p&gt;Wow has 2021 started at an incredible pace for me. Getting back into the projects I’m working on as &lt;a href=&quot;https://www.digitalsolutionfoundry.co.za/&quot;&gt;DSF&lt;/a&gt; and picking up with clients where we left off in 2020.&lt;/p&gt;
 </description><pubDate>Wed, 20 Jan 2021 00:00:00 +0200</pubDate>
-        <link>https://penkin.me/self%20development/2021/01/20/intentional.html</link>
-        <guid isPermaLink="true">https://penkin.me/self%20development/2021/01/20/intentional.html</guid><category>Self Development</category></item><item>
+        <link>https://www.penkin.me/self%20development/2021/01/20/intentional.html</link>
+        <guid isPermaLink="true">https://www.penkin.me/self%20development/2021/01/20/intentional.html</guid><category>Self Development</category></item><item>
         <title>Deleting “bin” &amp; “obj” folders in a .NET solution.</title>
         <description>&lt;p&gt;Recently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/&quot;&gt;.NET Core&lt;/a&gt; solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.&lt;/p&gt;
 
@@ -86,13 +86,13 @@
 &lt;h2 id=&quot;bat-solution&quot;&gt;BAT Solution&lt;/h2&gt;
 
 &lt;p&gt;I found the following solution on &lt;a href=&quot;https://medium.com/volosoft/deleting-all-bin-obj-folders-in-a-solution-93e401372e69&quot;&gt;Alper Ebiçoğlu’s post&lt;/a&gt; about the same issue. Basically do exactly the same as above but instead of using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.sh&lt;/code&gt; extension, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bat&lt;/code&gt;.&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;@echo &lt;span class=&quot;na&quot;&gt;off&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-batch&quot; data-lang=&quot;batch&quot;&gt;@echo &lt;span class=&quot;na&quot;&gt;off&lt;/span&gt;
 @echo &lt;span class=&quot;kd&quot;&gt;Deleting&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;BIN&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;OBJ&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;folders&lt;/span&gt;…for &lt;span class=&quot;na&quot;&gt;/d /r &lt;/span&gt;. &lt;span class=&quot;vm&quot;&gt;%%d&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; @if &lt;span class=&quot;ow&quot;&gt;exist&lt;/span&gt; “&lt;span class=&quot;vm&quot;&gt;%%d&lt;/span&gt;” &lt;span class=&quot;nb&quot;&gt;rd&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;/s/q &lt;/span&gt;“&lt;span class=&quot;vm&quot;&gt;%%d&lt;/span&gt;”@echo &lt;span class=&quot;kd&quot;&gt;BIN&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;OBJ&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;folders&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;successfully&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;deleted&lt;/span&gt; :&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;Close&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;window&lt;/span&gt;.pause &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;nul&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Double click the bat file and &lt;strong&gt;BAM! Victory!&lt;/strong&gt;&lt;/p&gt;
 </description><description>&lt;p&gt;Recently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/&quot;&gt;.NET Core&lt;/a&gt; solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.&lt;/p&gt;
 </description><pubDate>Tue, 21 Apr 2020 00:00:00 +0200</pubDate>
-        <link>https://penkin.me/software%20development/2020/04/21/bin-obj-folders.html</link>
-        <guid isPermaLink="true">https://penkin.me/software%20development/2020/04/21/bin-obj-folders.html</guid><category>Software Development</category></item><item>
+        <link>https://www.penkin.me/software%20development/2020/04/21/bin-obj-folders.html</link>
+        <guid isPermaLink="true">https://www.penkin.me/software%20development/2020/04/21/bin-obj-folders.html</guid><category>Software Development</category></item><item>
         <title>Step Back, Take a Breath, Try Later</title>
         <description>&lt;p&gt;This happens to me way more than I’d like to admit and I’m hoping that by writing it down here I will learn from my mistakes. Maybe you’re making this mistake and could learn as well, please don’t tell me I’m the only one doing this!?&lt;/p&gt;
 
@@ -124,8 +124,8 @@
 &lt;p&gt;Here is some more interesting reading on &lt;a href=&quot;https://link.springer.com/article/10.3758%2Fs13421-012-0256-7&quot;&gt;sleep and problem-solving&lt;/a&gt;, especially if they’re difficult problems.&lt;/p&gt;
 </description><description>&lt;p&gt;This happens to me way more than I’d like to admit and I’m hoping that by writing it down here I will learn from my mistakes. Maybe you’re making this mistake and could learn as well, please don’t tell me I’m the only one doing this!?&lt;/p&gt;
 </description><pubDate>Sat, 01 Feb 2020 00:00:00 +0200</pubDate>
-        <link>https://penkin.me/software%20development/2020/02/01/step-back.html</link>
-        <guid isPermaLink="true">https://penkin.me/software%20development/2020/02/01/step-back.html</guid><category>Software Development</category></item><item>
+        <link>https://www.penkin.me/software%20development/2020/02/01/step-back.html</link>
+        <guid isPermaLink="true">https://www.penkin.me/software%20development/2020/02/01/step-back.html</guid><category>Software Development</category></item><item>
         <title>My Problem With Smartwatches</title>
         <description>&lt;p&gt;I got an Apple Watch to monitor my health; notifications got in the way.&lt;/p&gt;
 
@@ -146,8 +146,8 @@
 &lt;p&gt;&lt;strong&gt;I highly recommend carefully choosing what you allow to take your time and attention.&lt;/strong&gt;&lt;/p&gt;
 </description><description>&lt;p&gt;I got an Apple Watch to monitor my health; notifications got in the way.&lt;/p&gt;
 </description><pubDate>Sat, 25 Jan 2020 00:00:00 +0200</pubDate>
-        <link>https://penkin.me/apple/gadgets/smartwatch/2020/01/25/smartwatches.html</link>
-        <guid isPermaLink="true">https://penkin.me/apple/gadgets/smartwatch/2020/01/25/smartwatches.html</guid><category>Apple</category><category>Gadgets</category><category>Smartwatch</category></item><item>
+        <link>https://www.penkin.me/apple/gadgets/smartwatch/2020/01/25/smartwatches.html</link>
+        <guid isPermaLink="true">https://www.penkin.me/apple/gadgets/smartwatch/2020/01/25/smartwatches.html</guid><category>Apple</category><category>Gadgets</category><category>Smartwatch</category></item><item>
         <title>ESH Canberra 2019</title>
         <description>&lt;p&gt;The Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.&lt;/p&gt;
 
@@ -189,8 +189,8 @@
 &lt;p&gt;There is only so much a jet-lagged, sleep-deprived person can do in three days. What we do have so far is a good proof of concept. Our code for the Google Chrome extension is available on &lt;a href=&quot;https://github.com/ESHackathon/grey-literature-recorder&quot;&gt;GitHub&lt;/a&gt; if you want to contribute in any way. It’s still very raw and we need a lot of polish around the readme, contribution and licensing docs.&lt;/p&gt;
 </description><description>&lt;p&gt;The Evidence Synthesis Hackathon is an event created to support the growth of new ideas, software and collaboration for improved evidence synthesis. The first event was held in 2018 in Stockholm Sweden and this year it was held in Canberra Australia.&lt;/p&gt;
 </description><pubDate>Tue, 16 Apr 2019 00:00:00 +0200</pubDate>
-        <link>https://penkin.me/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html</link>
-        <guid isPermaLink="true">https://penkin.me/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html</guid><category>Evidence Synthesis Hackathon</category><category>Software Development</category></item><item>
+        <link>https://www.penkin.me/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html</link>
+        <guid isPermaLink="true">https://www.penkin.me/evidence%20synthesis%20hackathon/software%20development/2019/04/16/esh-canberra.html</guid><category>Evidence Synthesis Hackathon</category><category>Software Development</category></item><item>
         <title>Facebook &quot;Free&quot;</title>
         <description>&lt;p&gt;Not so long ago I wrote about &lt;a href=&quot;/privacy/social%20media/2019/01/23/google-free.html&quot;&gt;leaving Google&lt;/a&gt;, they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.&lt;/p&gt;
 
@@ -198,9 +198,10 @@
 
 &lt;p&gt;Have a look at the recent video &lt;a href=&quot;https://www.projectveritas.com/&quot;&gt;Project Veritas&lt;/a&gt; released below;&lt;/p&gt;
 
-&lt;div class=&quot;youtube-video-container&quot;&gt;
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/pYSmFI9GAAs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/pYSmFI9GAAs&quot; width=&quot;700&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;
+    &lt;/iframe&gt;
+  &lt;/div&gt;
 
 &lt;p&gt;I’m still blown away by the number of &lt;a href=&quot;https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636?ns=prod/accounts-wsj&quot;&gt;stories&lt;/a&gt; that have &lt;a href=&quot;https://techcrunch.com/2019/02/21/facebook-removes-onavo/&quot;&gt;come out&lt;/a&gt; about &lt;a href=&quot;https://medium.com/@alecmuffett/a-billion-grains-of-rice-91202220e10e&quot;&gt;Facebook&lt;/a&gt; in the last little while with little to no impact on their business. As a society, we are so hooked on Facebook crack that we just cannot call it quits.&lt;/p&gt;
 
@@ -211,8 +212,8 @@
 &lt;p&gt;I have not used Diaspora yet but I’m not sure I have a need for one. I have been off Facebook for a while now with no regrets. You quickly get over that FOMO that you’re missing out. I also have decided not to use Instagram or WhatsApp specifically because they are owned by Facebook. I don’t know if I’m strange but I really have very little need for social media, it mostly seems fake to me.&lt;/p&gt;
 </description><description>&lt;p&gt;Not so long ago I wrote about &lt;a href=&quot;/privacy/social%20media/2019/01/23/google-free.html&quot;&gt;leaving Google&lt;/a&gt;, they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.&lt;/p&gt;
 </description><pubDate>Thu, 28 Feb 2019 00:00:00 +0200</pubDate>
-        <link>https://penkin.me/privacy/social%20media/2019/02/28/facebook-free.html</link>
-        <guid isPermaLink="true">https://penkin.me/privacy/social%20media/2019/02/28/facebook-free.html</guid><category>Privacy</category><category>Social Media</category></item><item>
+        <link>https://www.penkin.me/privacy/social%20media/2019/02/28/facebook-free.html</link>
+        <guid isPermaLink="true">https://www.penkin.me/privacy/social%20media/2019/02/28/facebook-free.html</guid><category>Privacy</category><category>Social Media</category></item><item>
         <title>Google &quot;Free&quot;</title>
         <description>&lt;p&gt;I have long been an advocate of Google, all their services &lt;em&gt;“just work”&lt;/em&gt;. They sync up wonderfully, they’re available everywhere and best of all, &lt;strong&gt;it’s free!&lt;/strong&gt;&lt;/p&gt;
 
@@ -248,6 +249,6 @@
 &lt;p&gt;I have kept my Google account for now just to ensure that everyone that needs to email me has my new email address. Overall, I don’t miss Google at all.&lt;/p&gt;
 </description><description>&lt;p&gt;I have long been an advocate of Google, all their services &lt;em&gt;“just work”&lt;/em&gt;. They sync up wonderfully, they’re available everywhere and best of all, &lt;strong&gt;it’s free!&lt;/strong&gt;&lt;/p&gt;
 </description><pubDate>Wed, 23 Jan 2019 00:00:00 +0200</pubDate>
-        <link>https://penkin.me/privacy/social%20media/2019/01/23/google-free.html</link>
-        <guid isPermaLink="true">https://penkin.me/privacy/social%20media/2019/01/23/google-free.html</guid><category>Privacy</category><category>Social Media</category></item></channel>
+        <link>https://www.penkin.me/privacy/social%20media/2019/01/23/google-free.html</link>
+        <guid isPermaLink="true">https://www.penkin.me/privacy/social%20media/2019/01/23/google-free.html</guid><category>Privacy</category><category>Social Media</category></item></channel>
 </rss>

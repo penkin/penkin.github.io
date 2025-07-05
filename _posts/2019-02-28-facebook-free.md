@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Facebook "Free"
+description: Why I decided to leave Facebook and how I navigated daily life without it. Reflections on privacy, social media habits, and finding healthier alternatives.
 image: fb-free-badge.png
 categories: ["Privacy", "Social Media"]
+youtubeId: pYSmFI9GAAs
 ---
 
 Not so long ago I wrote about [leaving Google](/privacy/social%20media/2019/01/23/google-free.html), they are shady and their main business is around spying. They need to get more data to be able to sell more ads effectively. The more data they get, the more data they need the more nefarious they become to get that data.
@@ -11,9 +13,7 @@ Facebook is no different. Also primarily an ad selling company they need to empl
 
 Have a look at the recent video [Project Veritas](https://www.projectveritas.com/) released below;
 
-<div class="youtube-video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pYSmFI9GAAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include youtube-player.html id=page.youtubeId %}
 
 I’m still blown away by the number of [stories](https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636?ns=prod/accounts-wsj) that have [come out](https://techcrunch.com/2019/02/21/facebook-removes-onavo/) about [Facebook](https://medium.com/@alecmuffett/a-billion-grains-of-rice-91202220e10e) in the last little while with little to no impact on their business. As a society, we are so hooked on Facebook crack that we just cannot call it quits.
 

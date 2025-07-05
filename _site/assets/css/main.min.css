@@ -237,26 +237,17 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
-  .my-10 {
-    margin-block: calc(var(--spacing) * 10);
-  }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
-  }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
@@ -738,6 +729,26 @@ h3 {
 }
 .post h2 {
   margin-top: 3rem;
+}
+blockquote {
+  border-left: 8px solid var(--color-sky-600);
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+ol {
+  list-style: decimal;
+  margin-left: 2rem;
+}
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+ol li, ul li {
+  margin-bottom: .25rem;
+}
+ol li::marker, ul li::marker {
+  color: var(--color-sky-600);
 }
 .container a:not(.no-underline) {
   color: var(--color-sky-600);

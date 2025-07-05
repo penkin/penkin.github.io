@@ -1,25 +1,28 @@
-title: Don't Jump
+title: Christopher Penkin
 email: chris@penkin.me
 description: >- # this means to ignore newlines until "baseurl:"
-  Don't Jump is a look inside some of my thoughts and ideas. I write here from time
-  to time about anything that catches my fancy.
+  Christopher shares projects, lessons, and thoughts on clean code, UX design, and creative tinkering—both digital and analog.
 baseurl: ""
-url: "https://penkin.me"
+url: "https://www.penkin.me"
 google_analytics: G-52NN17J06E
+locale: en_ZA
 
 highlighter: rouge
 
 paginate: 10
 paginate_path: "/blog/page:num/"
 
-# kramdown:
-#   parse_block_html: true
+twitter:
+  username: penkin
+  card: summary
 
 social:
-  - title: Twitter
-    url: https://twitter.com/penkin
-  - title: GitHub
-    url: https://github.com/penkin
+  name: Christopher Penkin
+  links:
+    - https://twitter.com/penkin
+    - https://bsky.app/profile/chrispenkin.bsky.social
+    - https://www.linkedin.com/in/penkin
+    - https://github.com/penkin
 
 navigation:
   - title: About
@@ -30,3 +33,4 @@ navigation:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag

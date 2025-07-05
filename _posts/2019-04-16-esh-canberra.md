@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ESH Canberra 2019
+description: Highlights from the Evidence Synthesis Hackathon in Canberra—collaborating on open-source tools, software development, and scientific innovation.
 image: esh_logo_canberra2019.png
 categories: ["Evidence Synthesis Hackathon", "Software Development"]
 ---

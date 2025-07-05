@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Deleting “bin” & “obj” folders in a .NET solution.
+description: A quick tip for .NET developers - how to safely delete bin and obj folders to resolve build issues and keep your projects clean.
 image: code.jpg
 categories: ["Software Development"]
 ---
@@ -32,7 +33,7 @@ All that is left is to make the file executable with chmod +x DeleteBinObjFolder
 
 I found the following solution on [Alper Ebiçoğlu’s post](https://medium.com/volosoft/deleting-all-bin-obj-folders-in-a-solution-93e401372e69) about the same issue. Basically do exactly the same as above but instead of using the ```.sh``` extension, use ```.bat```.
 
-{%- highlight bat -%}
+{%- highlight batch -%}
 @echo off
 @echo Deleting all BIN and OBJ folders…for /d /r . %%d in (bin,obj) do @if exist “%%d” rd /s/q “%%d”@echo BIN and OBJ folders successfully deleted :) Close the window.pause > nul
 {%- endhighlight -%}
