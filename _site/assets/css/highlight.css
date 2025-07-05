@@ -3,7 +3,6 @@ div.highlight {
   padding: 0.75rem 1rem;
   overflow-x: auto;
   max-width: calc(100vw - 4rem);
-  scrollbar-color: rgb(47, 47, 72) rgb(30, 30, 46);
   scrollbar-width: thin;
 }
 
@@ -16,163 +15,332 @@ div.highlight pre {
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
-/* Base styles */
-.highlight {
+/* Base dark styles */
+[data-theme=dark] div.highlight {
+  scrollbar-color: #3e3e5f #1e1e2e;
+}
+
+[data-theme=dark] .highlight {
   color: #cdd6f4; /* text */
   background-color: #1e1e2e; /* base */
 }
-.highlight table td {
+[data-theme=dark] .highlight table td {
   padding: 5px;
 }
-.highlight table pre {
+[data-theme=dark] .highlight table pre {
   margin: 0;
 }
 
 /* Comments */
-.highlight .c,
-.highlight .ch,
-.highlight .cd,
-.highlight .cpf,
-.highlight .cm,
-.highlight .c1,
-.highlight .cs {
+[data-theme=dark] .highlight .c,
+[data-theme=dark] .highlight .ch,
+[data-theme=dark] .highlight .cd,
+[data-theme=dark] .highlight .cpf,
+[data-theme=dark] .highlight .cm,
+[data-theme=dark] .highlight .c1,
+[data-theme=dark] .highlight .cs {
   color: #585b70; /* surface2 */
   font-style: italic;
 }
-.highlight .cp {
+[data-theme=dark] .highlight .cp {
   color: #585b70;
   font-weight: bold;
 }
 
 /* Errors */
-.highlight .err {
+[data-theme=dark] .highlight .err {
   color: #f38ba8; /* red */
   background-color: #11111b; /* crust */
 }
 
 /* Diff */
-.highlight .gi {
+[data-theme=dark] .highlight .gi {
   color: #a6e3a1; /* green */
   background-color: #2b303b; /* custom */
 }
-.highlight .gd {
+[data-theme=dark] .highlight .gd {
   color: #f38ba8; /* red */
   background-color: #2b303b; /* custom */
 }
 
 /* Generic emphasis */
-.highlight .ge {
+[data-theme=dark] .highlight .ge {
   font-style: italic;
 }
-.highlight .gs {
+[data-theme=dark] .highlight .gs {
   font-weight: bold;
 }
 
 /* Headings, prompt etc */
-.highlight .gh {
+[data-theme=dark] .highlight .gh {
   color: #94e2d5; /* teal */
 }
-.highlight .go {
+[data-theme=dark] .highlight .go {
   color: #6c7086; /* muted */
 }
-.highlight .gp {
+[data-theme=dark] .highlight .gp {
   color: #74c7ec; /* sapphire */
 }
-.highlight .gu {
+[data-theme=dark] .highlight .gu {
   color: #89b4fa; /* blue */
 }
-.highlight .gt,
-.highlight .gr {
+[data-theme=dark] .highlight .gt,
+[data-theme=dark] .highlight .gr {
   color: #f38ba8; /* red */
 }
 
 /* Keywords and declarations */
-.highlight .k,
-.highlight .kv,
-.highlight .kc,
-.highlight .kd,
-.highlight .kp,
-.highlight .kr,
-.highlight .kt,
-.highlight .sa {
+[data-theme=dark] .highlight .k,
+[data-theme=dark] .highlight .kv,
+[data-theme=dark] .highlight .kc,
+[data-theme=dark] .highlight .kd,
+[data-theme=dark] .highlight .kp,
+[data-theme=dark] .highlight .kr,
+[data-theme=dark] .highlight .kt,
+[data-theme=dark] .highlight .sa {
   color: #f38ba8; /* red */
   font-weight: bold;
 }
 
 /* Operators and punctuations */
-.highlight .o,
-.highlight .ow,
-.highlight .kn {
+[data-theme=dark] .highlight .o,
+[data-theme=dark] .highlight .ow,
+[data-theme=dark] .highlight .kn {
   color: #f38ba8; /* red */
   font-weight: bold;
 }
 
 /* Numbers */
-.highlight .m,
-.highlight .mb,
-.highlight .mf,
-.highlight .mh,
-.highlight .mi,
-.highlight .il,
-.highlight .mo,
-.highlight .mx {
+[data-theme=dark] .highlight .m,
+[data-theme=dark] .highlight .mb,
+[data-theme=dark] .highlight .mf,
+[data-theme=dark] .highlight .mh,
+[data-theme=dark] .highlight .mi,
+[data-theme=dark] .highlight .il,
+[data-theme=dark] .highlight .mo,
+[data-theme=dark] .highlight .mx {
   color: #fab387; /* peach */
 }
 
 /* Strings */
-.highlight .s,
-.highlight .dl,
-.highlight .sb,
-.highlight .sc,
-.highlight .sd,
-.highlight .s1,
-.highlight .s2,
-.highlight .sh,
-.highlight .si,
-.highlight .sx,
-.highlight .sr,
-.highlight .ss {
+[data-theme=dark] .highlight .s,
+[data-theme=dark] .highlight .dl,
+[data-theme=dark] .highlight .sb,
+[data-theme=dark] .highlight .sc,
+[data-theme=dark] .highlight .sd,
+[data-theme=dark] .highlight .s1,
+[data-theme=dark] .highlight .s2,
+[data-theme=dark] .highlight .sh,
+[data-theme=dark] .highlight .si,
+[data-theme=dark] .highlight .sx,
+[data-theme=dark] .highlight .sr,
+[data-theme=dark] .highlight .ss {
   color: #a6e3a1; /* green */
 }
 
 /* Builtins */
-.highlight .nb,
-.highlight .bp {
+[data-theme=dark] .highlight .nb,
+[data-theme=dark] .highlight .bp {
   color: #cdd6f4; /* text */
 }
-.highlight .no {
+[data-theme=dark] .highlight .no {
   color: #fab387; /* peach */
 }
 
 /* Names, identifiers */
-.highlight .na {
+[data-theme=dark] .highlight .na {
   color: #f9e2af; /* yellow */
 }
-.highlight .nc,
-.highlight .nd,
-.highlight .ne,
-.highlight .nf,
-.highlight .fm {
+[data-theme=dark] .highlight .nc,
+[data-theme=dark] .highlight .nd,
+[data-theme=dark] .highlight .ne,
+[data-theme=dark] .highlight .nf,
+[data-theme=dark] .highlight .fm {
   color: #89b4fa; /* blue */
   font-weight: bold;
 }
-.highlight .nn,
-.highlight .ni,
-.highlight .nv,
-.highlight .vc,
-.highlight .vg,
-.highlight .vi,
-.highlight .vm,
-.highlight .nl {
+[data-theme=dark] .highlight .nn,
+[data-theme=dark] .highlight .ni,
+[data-theme=dark] .highlight .nv,
+[data-theme=dark] .highlight .vc,
+[data-theme=dark] .highlight .vg,
+[data-theme=dark] .highlight .vi,
+[data-theme=dark] .highlight .vm,
+[data-theme=dark] .highlight .nl {
   color: #cdd6f4; /* text */
 }
 
 /* Tags */
-.highlight .nt {
+[data-theme=dark] .highlight .nt {
   color: #89dceb; /* sky */
 }
 
 /* Whitespace */
-.highlight .w {
+[data-theme=dark] .highlight .w {
   color: #585b70; /* surface2 as invisible */
+}
+
+/* Base light styles */
+[data-theme=light] div.highlight {
+  scrollbar-color: #b6b8bb #EFF1F5;
+}
+
+[data-theme=light] .highlight {
+  color: #4C4F69; /* text */
+  background-color: #EFF1F5; /* base */
+}
+[data-theme=light] .highlight table td {
+  padding: 5px;
+}
+[data-theme=light] .highlight table pre {
+  margin: 0;
+}
+
+/* Comments */
+[data-theme=light] .highlight .c,
+[data-theme=light] .highlight .ch,
+[data-theme=light] .highlight .cd,
+[data-theme=light] .highlight .cpf,
+[data-theme=light] .highlight .cm,
+[data-theme=light] .highlight .c1,
+[data-theme=light] .highlight .cs {
+  color: #ACB0BE; /* surface2 */
+  font-style: italic;
+}
+[data-theme=light] .highlight .cp {
+  color: #ACB0BE;
+  font-weight: bold;
+}
+
+/* Errors */
+[data-theme=light] .highlight .err {
+  color: #D20F39; /* red */
+  background-color: #DCE0E8; /* crust */
+}
+
+/* Diff */
+[data-theme=light] .highlight .gi {
+  color: #40A02B; /* green */
+  background-color: #E6E9F0; /* custom light diff bg */
+}
+[data-theme=light] .highlight .gd {
+  color: #D20F39; /* red */
+  background-color: #E6E9F0; /* custom light diff bg */
+}
+
+/* Generic emphasis */
+[data-theme=light] .highlight .ge {
+  font-style: italic;
+}
+[data-theme=light] .highlight .gs {
+  font-weight: bold;
+}
+
+/* Headings, prompt etc */
+[data-theme=light] .highlight .gh {
+  color: #179299; /* teal */
+}
+[data-theme=light] .highlight .go {
+  color: #9CA0B0; /* muted */
+}
+[data-theme=light] .highlight .gp {
+  color: #209FB5; /* sapphire */
+}
+[data-theme=light] .highlight .gu {
+  color: #1E66F5; /* blue */
+}
+[data-theme=light] .highlight .gt,
+[data-theme=light] .highlight .gr {
+  color: #D20F39; /* red */
+}
+
+/* Keywords and declarations */
+[data-theme=light] .highlight .k,
+[data-theme=light] .highlight .kv,
+[data-theme=light] .highlight .kc,
+[data-theme=light] .highlight .kd,
+[data-theme=light] .highlight .kp,
+[data-theme=light] .highlight .kr,
+[data-theme=light] .highlight .kt,
+[data-theme=light] .highlight .sa {
+  color: #D20F39; /* red */
+  font-weight: bold;
+}
+
+/* Operators and punctuations */
+[data-theme=light] .highlight .o,
+[data-theme=light] .highlight .ow,
+[data-theme=light] .highlight .kn {
+  color: #D20F39; /* red */
+  font-weight: bold;
+}
+
+/* Numbers */
+[data-theme=light] .highlight .m,
+[data-theme=light] .highlight .mb,
+[data-theme=light] .highlight .mf,
+[data-theme=light] .highlight .mh,
+[data-theme=light] .highlight .mi,
+[data-theme=light] .highlight .il,
+[data-theme=light] .highlight .mo,
+[data-theme=light] .highlight .mx {
+  color: #FE640B; /* peach */
+}
+
+/* Strings */
+[data-theme=light] .highlight .s,
+[data-theme=light] .highlight .dl,
+[data-theme=light] .highlight .sb,
+[data-theme=light] .highlight .sc,
+[data-theme=light] .highlight .sd,
+[data-theme=light] .highlight .s1,
+[data-theme=light] .highlight .s2,
+[data-theme=light] .highlight .sh,
+[data-theme=light] .highlight .si,
+[data-theme=light] .highlight .sx,
+[data-theme=light] .highlight .sr,
+[data-theme=light] .highlight .ss {
+  color: #40A02B; /* green */
+}
+
+/* Builtins */
+[data-theme=light] .highlight .nb,
+[data-theme=light] .highlight .bp {
+  color: #4C4F69; /* text */
+}
+[data-theme=light] .highlight .no {
+  color: #FE640B; /* peach */
+}
+
+/* Names, identifiers */
+[data-theme=light] .highlight .na {
+  color: #DF8E1D; /* yellow */
+}
+[data-theme=light] .highlight .nc,
+[data-theme=light] .highlight .nd,
+[data-theme=light] .highlight .ne,
+[data-theme=light] .highlight .nf,
+[data-theme=light] .highlight .fm {
+  color: #1E66F5; /* blue */
+  font-weight: bold;
+}
+[data-theme=light] .highlight .nn,
+[data-theme=light] .highlight .ni,
+[data-theme=light] .highlight .nv,
+[data-theme=light] .highlight .vc,
+[data-theme=light] .highlight .vg,
+[data-theme=light] .highlight .vi,
+[data-theme=light] .highlight .vm,
+[data-theme=light] .highlight .nl {
+  color: #4C4F69; /* text */
+}
+
+/* Tags */
+[data-theme=light] .highlight .nt {
+  color: #04A5E5; /* sky */
+}
+
+/* Whitespace */
+[data-theme=light] .highlight .w {
+  color: #ACB0BE; /* surface2 as invisible */
 }

@@ -19,7 +19,7 @@ layout: default
   </svg>
   <span>Hi,</span>
 </h1>
-<div class="text-grey-darkest space-y-6 text-lg leading-normal">
+<div class="space-y-6 text-lg leading-normal">
   <p>
     Hi! I'm Christopher — a principal software engineer at 
     <a href="https://www.digitalsolutionfoundry.co.za/" target="_blank">Digital Solution Foundry</a> by day, digital tinkerer 
@@ -61,3 +61,19 @@ layout: default
     </a>. <span class="font-bold">Welcome!</span>
   </p>
 </div>
+<hr class="border-gray-300 dark:border-gray-600 my-12">
+<h2 class="">Latest Blog Post</h1>
+{% for post in site.posts limit:1 %}
+  <article class="item-start relative flex flex-col rounded px-4 py-6 hover:bg-sky-50 dark:hover:bg-sky-900">
+    <h3 class="text-lg font-bold">
+      <a href="{{ post.url }}" class="no-underline">
+        <span class="absolute inset-0"></span>
+        {{ post.title }}
+      </a>
+    </h2>
+    <p>{{ post.content | strip_html | strip_newlines | truncate: 160 }}</p>
+    <time class="mt-2 text-sm text-gray-500">
+      Published on {{ post.date | date: "%d %B %Y" }}
+    </time>
+  </article>
+{% endfor %}
