@@ -36,17 +36,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Theme toggle
-  var btnThemeSystem = document.getElementById('btnThemeSystem');
-  var btnThemeLight = document.getElementById('btnThemeLight');
-  var btnThemeDark = document.getElementById('btnThemeDark');
-  var themeToggleSlider = document.getElementById('themeToggleSlider');
+  var btnThemeSystem = document.querySelectorAll('.theme-system');
+  var btnThemeLight = document.querySelectorAll('.theme-light');
+  var btnThemeDark = document.querySelectorAll('.theme-dark');
+  var themeToggleSlider = document.querySelectorAll('.theme-toggle-slider');
 
-  // [[data-theme=light]_&]:left-[33%] [[data-theme=dark]_&]:left-[66%]
+  function updateThemeToggleSlider(position) {
+    themeToggleSlider.forEach(slider => {
+      slider.style.left = position;
+    });
+  }
 
   function updateTheme(theme) {
     if (theme === 'system') {
       localStorage.removeItem('color-theme');
-      themeToggleSlider.style.left = '0';
+      updateThemeToggleSlider('0');
 
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {  
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -58,23 +62,29 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.setAttribute('data-theme', theme);
 
       if (theme === 'light') {
-        themeToggleSlider.style.left = '33%';
+        updateThemeToggleSlider('33%');
       } else {
-        themeToggleSlider.style.left = '66%';
+        updateThemeToggleSlider('66%');
       }
     }
   }
 
-  btnThemeSystem.addEventListener('click', function() {
-    updateTheme('system');
+  btnThemeSystem.forEach(btn => {
+    btn.addEventListener('click', function() {
+      updateTheme('system');
+    });
   });
 
-  btnThemeLight.addEventListener('click', function() {
-    updateTheme('light');
+  btnThemeLight.forEach(btn => {
+    btn.addEventListener('click', function() {
+      updateTheme('light');
+    });
   });
 
-  btnThemeDark.addEventListener('click', function() {
-    updateTheme('dark');
+  btnThemeDark.forEach(btn => {
+    btn.addEventListener('click', function() {
+      updateTheme('dark');
+    });
   });
 
   var theme = localStorage.getItem('color-theme');
