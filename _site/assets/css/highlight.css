@@ -1,9 +1,26 @@
-div.highlight, figure.highlight {
+div.highlight {
   border-radius: 0.25rem;
   padding: 0.75rem 1rem;
-  overflow-x: scroll;
+  overflow: auto;
+  max-width: 100%;
   scrollbar-color: rgb(47, 47, 72) rgb(30, 30, 46);
   scrollbar-width: thin;
+}
+
+div.highlight pre {
+  overflow-x: auto;
+  max-width: 100%;
+  display: block;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+div.highlight code {
+  white-space: pre;
+  word-wrap: normal;
+  display: inline-block;
+  min-width: max-content;
 }
 
 /* Base styles */
