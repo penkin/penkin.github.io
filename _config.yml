@@ -34,4 +34,5 @@ navigation:
     url: /feed.xml
 
 plugins:
+  - jekyll-feed
   - jekyll-paginate
