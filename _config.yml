@@ -1,5 +1,6 @@
 title: Christopher Penkin
 email: chris@penkin.me
+author: Christopher Penkin
 description: >- # this means to ignore newlines until "baseurl:"
   Christopher shares projects, lessons, and thoughts on clean code, UX design, and creative tinkering—both digital and analog.
 baseurl: ""
@@ -12,6 +13,9 @@ highlighter: rouge
 
 paginate: 10
 paginate_path: "/blog/page:num/"
+
+feed:
+  icon: /assets/img/favicon-192x192.png
 
 twitter:
   username: penkin
