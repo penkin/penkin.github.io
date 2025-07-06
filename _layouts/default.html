@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% include seo.html %}
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
+    <link rel="alternate" title="Blog Posts" type="application/atom+xml" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="self" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"/>
     <link rel="stylesheet" href="/assets/css/main.min.css" />
     <script>
       if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
