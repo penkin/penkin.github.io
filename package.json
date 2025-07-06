@@ -4,8 +4,8 @@
   "description": "Personal blog.",
   "main": "index.js",
   "scripts": {
-    "build:dev": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/main.min.css --watch",
-    "build:prod": "NODE_ENV=production npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/main.min.css --minify"
+    "build:dev": "npx @tailwindcss/cli -i ./src/css/main.css -o ./assets/css/main.min.css --watch",
+    "build:prod": "NODE_ENV=production npx @tailwindcss/cli -i ./src/css/main.css -o ./assets/css/main.min.css --minify"
   },
   "repository": {
     "type": "git",
