@@ -30,6 +30,8 @@ navigation:
     url: /
   - title: Blog
     url: /blog
+  - title: RSS Feed
+    url: /feed.xml
 
 plugins:
   - jekyll-feed
