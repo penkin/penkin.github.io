@@ -98,7 +98,8 @@ ENV/
 # PyCharm project settings
 .idea
 .DS_Store
-node_modules
 
+# Node & Jekyll build directories.
+node_modules
 _site
-.jekyll-cache/
+.jekyll-cache
