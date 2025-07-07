@@ -60,7 +60,12 @@ scope are limited, you'll get unclear or incorrect outputs.
 Here’s where things get really interesting.
 
 The Model Context Protocol (MCP) is shaping up to be a powerful paradigm in the AI workflow. MCP allows AI 
-models to talk to tools via structured, documented interfaces. 
+models to talk to tools via structured, documented interfaces.
+
+<figure>
+	<img src="{{ '/assets/img/mcp.jpg' | prepend: site.baseurl }}" alt="">
+	<figcaption>Fig1. - MCP overview</figcaption>
+</figure>
 
 Think of it like plug-and-play for tools + AI. We're starting to get into the realms of this being our very own
 Jarvis for Ironman. You can take something like [Claude Desktop](https://claude.ai/download) and connect it to 
