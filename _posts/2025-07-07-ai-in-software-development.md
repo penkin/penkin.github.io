@@ -63,7 +63,7 @@ The Model Context Protocol (MCP) is shaping up to be a powerful paradigm in the 
 models to talk to tools via structured, documented interfaces.
 
 <figure>
-	<img src="{{ '/assets/img/mcp.jpg' | prepend: site.baseurl }}" alt="">
+	<img src="{{ '/assets/img/mcp.png' | prepend: site.baseurl }}" alt="">
 	<figcaption>Fig1. - MCP overview</figcaption>
 </figure>
 
