@@ -88,6 +88,6 @@ This isn't just chat-based prompts anymore. It’s AI with real-world integratio
 
 ## Final thoughts
 
-I really love where this is going so far, it's really interesting using and playing with all these shiny toys. This however
-are still in flux. So keep playing, don't tie into any one service. They are all improving and evolving. Try things out and 
+I really love where this is going so far, it's really interesting using and playing with all these shiny toys. They are however
+still in flux. So keep playing, don't tie into any one service. They are all improving and evolving. Try things out and 
 see where it takes you.
