@@ -73,7 +73,7 @@ various tools to create a personal assistant that knows about your data and can 
 
 I'm not sure how ready I am for this step to be frank but the thought of being able to talk to an AI that knows
 my calendar, my mails, my [Notion](https://www.notion.so/) documents... has my nerdy senses tingling. Who knows, maybe
-my memory is short sinse it was not that long ago I wrote about leaving 
+my memory is short since it was not that long ago I wrote about leaving 
 [Facebook]({{ site.url }}{% post_url 2019-02-28-facebook-free %}) and 
 [Google]({{ site.url }}{% post_url 2019-01-23-google-free %}) behind.
 
