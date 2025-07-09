@@ -2,9 +2,7 @@
 layout: default
 ---
 
-<div class="post">
-    <h1 class="mb-4 text-2xl font-extrabold text-black">{{ page.title }}</h1>
-    {% include post-meta.html %}
-    <article class="text-grey-darkest space-y-6">{{ content }}</article>
-    {% include post-footer.html %}
-</div>
+<h1 class="mb-4 text-2xl font-extrabold text-black">{{ page.title }}</h1>
+{% include post-meta.html %}
+{{ content }}
+{% include post-footer.html %}

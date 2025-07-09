@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+p, h2, h3, figure, code {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+  margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+}
+
 h1,
 h2,
 h3 {
@@ -17,15 +23,13 @@ h2 {
   font-size: clamp(1.5rem, 1.2rem + 1vw, 1.7rem);
   letter-spacing: -0.005em;
   line-height: 1.25;
+  margin-top: 3rem;
 }
 
 h3 {
   font-size: clamp(1.25rem, 1rem + 1vw, 1.5rem);
   letter-spacing: -0.005em;
   line-height: 1;
-}
-
-.post h2 {
   margin-top: 3rem;
 }
 
@@ -56,14 +60,52 @@ ul li::marker {
   color: var(--color-sky-600);
 }
 
-.container a:not(.no-underline) {
+figcaption {
+  color: var(--color-gray-400);
+  text-align: center;
+  margin-top: .25rem;
+}
+
+.content {
+  --gap: clamp(1rem, 6vw, 3rem);
+  --full: minmax(var(--gap), 1fr);
+  --content: min(65ch, 100% - var(--gap) * 2);
+  --popout: minmax(0, 2rem);
+  --feature: minmax(0, 5rem);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] var(--full)
+    [feature-start] var(--feature)
+    [popout-start] var(--popout)
+    [content-start] var(--content) [content-end]
+    var(--popout) [popout-end]
+    var(--feature) [feature-end]
+    var(--full) [full-end];
+}
+
+.content > * {
+  grid-column: content;
+
+}
+
+.content figure, .content code {
+  grid-column: feature;
+  width: 100%;
+}
+
+.content figure img {
+  width: 100%;
+}
+
+.content a:not(.no-underline) {
   color: var(--color-sky-600);
   text-decoration: underline;
   text-decoration-color: var(--color-sky-300);
   transition: all 100ms ease-in;
 }
 
-.container a:hover:not(.no-underline) {
+.content a:hover:not(.no-underline) {
   color: var(--color-sky-700);
   text-decoration-color: var(--color-sky-700);
 }

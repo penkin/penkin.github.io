@@ -23,13 +23,11 @@
       {% include analytics.html %}
     {% endif %}
   </head>
-  <body class="font-sans text-gray-900 dark:text-gray-300 bg-white dark:bg-gray-900 antialiased flex justify-center">
-    <div class="px-6 py-8 md:px-16 lg:px-24 lg:py-16 max-w-[85ch]">
+  <body class="font-sans text-gray-900 dark:text-gray-300 bg-white dark:bg-gray-900 antialiased my-8 lg:y-16">
+    <div class="content">
       {% include header.html %}
       {% include menu.html %}
-      <div class="container">
-        {{ content }}
-      </div>
+      {{ content }}
       {% include footer.html %}
     </div>
     <script src="/assets/js/main.js"></script>
