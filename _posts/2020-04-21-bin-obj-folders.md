@@ -9,7 +9,7 @@ categories: ["Software Development"]
 Recently I ran into an issue where none of my breakpoints for my solution would get activated when I ran a pretty large [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) solution. I tried cleaning the project and rebuilding which did not work. I was even desperate enough to reboot my machine, that’s when I know I’m at the end of my tether.
 
 <figure>
-	<img src="{{ '/assets/img/code1.jpg' | prepend: site.baseurl }}" alt="">
+	<img src="{{ '/assets/img/code1.jpg' | prepend: site.url }}" alt="">
 	<figcaption>Fig1. - Didn't find the associated module for the breakpoint</figcaption>
 </figure>
 
