@@ -8,7 +8,6 @@ url: "https://www.penkin.me"
 google_analytics: G-52NN17J06E
 locale: en_ZA
 
-jekyll_version: "3.10.0"
 highlighter: rouge
 
 paginate: 10
@@ -40,3 +39,4 @@ navigation:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
