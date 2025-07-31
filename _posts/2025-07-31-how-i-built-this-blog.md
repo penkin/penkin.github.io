@@ -50,7 +50,7 @@ Again a pretty simple setup that has you adding `jekyll-feed` to your `Gemfile` 
 
 {%- highlight yml -%}
 feed:
-  icon: /assets/img/favicon-192x192.png\
+  icon: /assets/img/favicon-192x192.png
 
 plugins:
   - jekyll-feed
@@ -103,3 +103,5 @@ GitHub Pages does have a default set of plugins that it supports out of the box 
 Next I guess is writing. The plan is to focus on getting one post out every month, if there are more, great, if not, fine. The setup is simple so that I can get that done. If I see some CSS or JS stuff I want to try I can also play with that here. Time will tell.
 
 For now though... write. Commit. Push. Done!
+
+You can see all the code at [https://github.com/penkin/penkin.github.io](https://github.com/penkin/penkin.github.io).
