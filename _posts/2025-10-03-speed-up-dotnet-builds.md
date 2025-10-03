@@ -93,4 +93,4 @@ Sometimes the best optimisations aren't about fancy new tools or frameworks; the
 
 ## Bonus
 
-Here is a link to the GitHub gist or our [if-changes.js](https://gist.github.com/penkin/1488fbc798a9c8fd21227d50d728440f) file.
+Here is a link to the GitHub gist of our [if-changes.js](https://gist.github.com/penkin/1488fbc798a9c8fd21227d50d728440f) file.
