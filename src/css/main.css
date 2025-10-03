@@ -182,6 +182,12 @@ dialog button {
   transform: translate(50%, -50%);
 }
 
+.highlighter-rouge {
+  margin-block-end: calc(
+    calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse))
+  );
+}
+
 div.highlight,
 figure.highlight {
   border-radius: 0.25rem;
@@ -199,9 +205,6 @@ figure.highlight pre {
   width: max-content;
   min-width: 100%;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  margin-block-end: calc(
-    calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse))
-  );
 }
 
 /* Base dark styles */
