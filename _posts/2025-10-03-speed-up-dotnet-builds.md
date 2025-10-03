@@ -5,13 +5,13 @@ description: Learn how we reduced .NET build times from 7+ minutes to under 1 mi
 categories: ["Development", ".NET"]
 ---
 
-We've all been there; waiting for builds that seem to take forever, especially when you're working on hybrid applications that mix .NET backend code and javascript/css assets. Every small change triggers a full rebuild of everything, including npm packages that haven't changed in weeks.
+We've all been there; waiting for builds that seem to take forever, especially when you're working on applications that mix .NET backend code and javascript/css assets. Every small change triggers a full rebuild of everything, including npm packages that haven't changed in weeks.
 
 Recently, a teammate introduced a simple but clever solution that cut our build times dramatically, a custom BUILD_CACHE property that intelligently decides when to rebuild frontend assets.
 
 ## The Problem
 
-The project is an large monolith application with many dotnet projects and quite a few of them need to build javascript and/or css assets.
+The project is an large monolith application with many .NET projects and quite a few of them need to build javascript and/or css assets.
 
 The issue? Every build had expensive asset rebuilds. `npm ci` alone can take several minutes on a fresh install, and `npm run build` adds even more time for webpack to do its thing.
 
@@ -58,17 +58,21 @@ The script uses file globbing (__powered by fast-glob__) to check specific files
 
 ## Setting It Up
 
-### For Visual Studio users:
-
-Open System Properties → Advanced → Environment Variables
-Add `BUILD_CACHE=true` as a system variable
-Restart your computer **(yes, really!)**
+Here is how to set it up on both [Rider](https://www.jetbrains.com/rider/) and [Visual Studio](https://visualstudio.microsoft.com/).
 
 ### For Rider users:
 
-Settings → Build, Execution, Deployment → Toolset and Build
-Edit "MSBuild Global Properties"
+Settings → Build, Execution, Deployment → Toolset and Build<br>
+Edit `"MSBuild Global Properties"`<br>
 Add `BUILD_CACHE=true`
+
+### For Visual Studio users:
+
+There is no built in way to do this in Visual Studio so we need to make use of environment variables within Windows.
+
+Open System Properties → Advanced → Environment Variables<br>
+Add `BUILD_CACHE=true` as a system variable<br>
+Restart your computer **(yes, really!)**
 
 Add the conditional targets to your `.csproj` file shown above and configure the `onlyIfChanged` section in your `package.json` file. Don't forget to install [fast-glob](https://www.npmjs.com/package/fast-glob) as a dependency.
 
