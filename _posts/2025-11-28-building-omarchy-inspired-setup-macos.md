@@ -2,7 +2,7 @@
 ---
 layout: post
 title: Building an Omarchy-Inspired Setup on macOS
-description: 
+description: Learn how to build a keyboard-driven tiling window manager setup on macOS using yabai, sketchybar, and skhd. Inspired by Omarchy's philosophy of minimal aesthetics and instant workspace switching, this guide covers configuration, multi-monitor support, and creating a distraction-free development environment on a MacBook Pro M1. 
 categories: ["Development", "Tools", "Productivity", "Configuration"]
 --- 
 
