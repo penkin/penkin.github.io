@@ -7,15 +7,15 @@ categories: ["Development", "Tools", "Productivity", "Configuration"]
 
 # Building an Omarchy-Inspired Setup on macOS
 
-<figure>
-    <img src="{{ '/assets/img/tiling-screenshot.png' | prepend: site.url }}" alt="Example of how it looks.">
-    <figcaption>Fig1. - My coding setup</figcaption>
-</figure>
-
 When I first discovered [Omarchy](https://omarchy.org/), I loved how clean and out or the way it felt. I loved it's 
 keyboard-driven approach to desktop computing. The tiling window management via Hyprland, the minimal aesthetic with 
 sharp corners, and the snappy, animation-free workspace switching spoke to my sensibilities. There was just one 
 problem: my MacBook Pro M1 can't run Omarchy as a Linux distribution.
+
+<figure>
+    <img src="{{ '/assets/img/tiling-screenshot.png' | prepend: site.url }}" alt="Example of how it looks.">
+    <figcaption>Fig1. - My coding setup</figcaption>
+</figure>
 
 Rather than compromise, I decided to recreate the Omarchy experience on macOS (sort of). This post documents my journey building 
 a sophisticated tiling window manager setup using `yabai`, `sketchybar`, and `skhd` - bringing the Omarchy philosophy 
