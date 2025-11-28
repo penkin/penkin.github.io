@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Building an Omarchy-Inspired Setup on macOS
