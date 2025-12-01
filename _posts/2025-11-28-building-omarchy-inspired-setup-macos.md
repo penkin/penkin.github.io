@@ -5,8 +5,6 @@ description: Learn how to build a keyboard-driven tiling window manager setup on
 categories: ["Development", "Tools", "Productivity", "Configuration"]
 --- 
 
-# Building an Omarchy-Inspired Setup on macOS
-
 When I first discovered [Omarchy](https://omarchy.org/), I loved how clean and out or the way it felt. I loved it's 
 keyboard-driven approach to desktop computing. The tiling window management via Hyprland, the minimal aesthetic with 
 sharp corners, and the snappy, animation-free workspace switching spoke to my sensibilities. There was just one 
