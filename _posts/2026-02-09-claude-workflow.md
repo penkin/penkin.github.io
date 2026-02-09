@@ -7,8 +7,6 @@ description: "A practical look at how I use Claude for real development work—f
 youtubeId: lJNjDoJi6hQ
 ---
 
-# How I'm Actually Using Claude in My Daily Workflow
-
 We did a quick knowledge-sharing session at work recently where I showed the team how I've been using [Claude Code](https://claude.com/product/claude-code). I thought it would be worth capturing some of those insights here for anyone else who may be interested.
 
 ## Two Different Tools for Two Different Jobs
