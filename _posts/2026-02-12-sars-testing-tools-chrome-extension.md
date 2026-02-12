@@ -106,4 +106,4 @@ If you're working with South African tax systems, payroll, or company registrati
 - [Chrome Web Store](https://chromewebstore.google.com/detail/sars-testing-tools/lkgdflhcanokafddhpmmfnghpdhhgcka)
 - [GitHub](https://github.com/penkin/SARS-Testing-Tools-Browser-Extension)
 
-It's a small tool, but it's one of those things where once you have it, you wonder why you were ever doing it manually.
+It's a small tool, but its really useful.
